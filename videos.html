@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos — Wellbiz Solutions</title>
+<meta name="description" content="Watch videos from Wellbiz Solutions.">
+<link rel="icon" href="/assets/images/logo.png">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  .video-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  @media (max-width:860px){ .video-grid{grid-template-columns:1fr;} }
+  .video-card{background:var(--light);border:1px solid var(--line-on-paper);overflow:hidden;border-radius:2px;}
+  .video-card video{width:100%;display:block;background:#000;aspect-ratio:16/9;}
+  .video-card .meta{padding:18px 20px;}
+  .video-card h3{font-size:16.5px;margin-bottom:6px;}
+  .video-card p{font-size:13.5px;opacity:.72;margin:0;}
+  .empty-note{font-family:var(--mono);font-size:13px;opacity:.55;padding:20px 0;}
+</style>
+</head>
+<body data-page="videos">
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="header-root"></div>
+
+<main id="main">
+
+  <section class="page-hero on-ink">
+    <div class="wrap">
+      <div class="eyebrow">Videos</div>
+      <h1>Watch, hosted right here.</h1>
+      <p class="lede">Videos live directly on this site — no YouTube or third-party platform.</p>
+    </div>
+  </section>
+
+  <section class="section-pad on-paper">
+    <div class="wrap">
+
+      <!--
+        HOW TO ADD A VIDEO (read me):
+        1. Put your video file (e.g. "our-story.mp4") into the folder
+           called assets/videos/  — right next to this file.
+        2. Copy one whole "video-card" block below (from <div class="video-card">
+           down to the matching closing </div>), paste it just above the
+           closing </div> of the video-grid, and change just two things:
+           - the src="..." to match your file name
+           - the title and description text
+        3. If this is the very first video you're adding, also delete the
+           <p class="empty-note"> line just below — it's only shown when
+           there are zero videos.
+        4. Save, then re-upload your website folder to your hosting
+           service (see HOW-TO-PUBLISH.txt) to make it live.
+
+        If this feels fiddly, you can also just send the video file(s)
+        back to Claude in a new chat and ask to have them added — that
+        works just as well.
+      -->
+      <div class="video-grid">
+        <p class="empty-note">No videos yet — check back soon.</p>
+
+        <!-- EXAMPLE (currently inactive because it's commented out):
+        <div class="video-card">
+          <video controls preload="metadata" src="/assets/videos/our-story.mp4"></video>
+          <div class="meta">
+            <h3>Our Story</h3>
+            <p>A short introduction to Wellbiz Solutions.</p>
+          </div>
+        </div>
+        -->
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-root"></div>
+<script src="/js/include.js"></script>
+</body>
+</html>

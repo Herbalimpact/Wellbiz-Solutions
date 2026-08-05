@@ -1,0 +1,157 @@
+HOW TO PUT YOUR WEBSITE ONLINE
+Wellbiz Solutions — plain-English guide, no coding needed
+================================================================
+
+WHAT YOU HAVE
+--------------
+A folder called "wellbiz-simple" with your whole website inside it —
+8 pages (Home, About, Services, Shop, Our Work, Blog, Videos, Contact),
+your logo, and your content. It's a plain website: no monthly software
+fees, no server to manage, no technical setup required to get it live.
+
+Three things work a little differently than a "full" website with its
+own private server, because we're keeping this simple and free for you:
+
+  - CONTACT FORM: when someone fills it in and hits "Send message," a
+    free service called Formspree forwards it straight to your email
+    inbox. You need to do a 2-minute one-time setup (Step 2 below) or
+    the form won't go anywhere yet.
+
+  - VIDEOS: there's no "upload button" on the website itself. Instead,
+    you add a video file into a folder and re-publish the site (Step 5
+    below), OR you send the video to Claude in a new chat and ask for
+    it to be added and re-packaged for you.
+
+  - BLOG COMMENTS: each blog post has a comments section powered by a
+    free service called Disqus. Same idea — a 2-minute one-time setup
+    (Step 6 below) turns it on.
+
+Neither of these needs any coding. Let's go step by step.
+
+
+STEP 1 — UNZIP THE FOLDER
+--------------------------
+- Windows: right-click the downloaded .zip file → "Extract All."
+- Mac: just double-click the .zip file — it unzips automatically.
+
+You'll now have a normal folder called "wellbiz-simple" with files and
+folders inside it. Don't rename anything inside it for now.
+
+
+STEP 2 — TURN ON YOUR CONTACT FORM (2 minutes, one time)
+----------------------------------------------------------
+1. Go to https://formspree.io in your browser and click "Sign Up."
+   Use your Wellbiz email. It's free for the amount of mail a small
+   business site typically gets.
+2. Once signed in, click "+ New Form." Name it "Wellbiz Contact" and
+   confirm your email address will receive submissions (it will ask
+   you to click a confirmation link the first time someone submits —
+   normal, one-time only).
+3. Formspree will show you a web address that looks like:
+       https://formspree.io/f/abcd1234
+   Copy that whole address.
+4. Open the file "contact.html" (inside the wellbiz-simple folder)
+   using a plain text editor — on Windows that's Notepad, on Mac
+   that's TextEdit set to "plain text" mode. Right-click the file →
+   "Open with" → choose Notepad/TextEdit.
+5. Press Ctrl+F (Windows) or Cmd+F (Mac) to search inside the file for:
+       YOUR_FORM_ID_HERE
+   Replace just that text with the address Formspree gave you, so the
+   line reads something like:
+       action="https://formspree.io/f/abcd1234"
+6. Save the file (keep it as .html — don't let it save as .txt).
+
+That's it — your contact form now really sends you email.
+
+
+STEP 3 — PUT YOUR WEBSITE ONLINE (5 minutes, free)
+-----------------------------------------------------
+We'll use a free service called Netlify — no credit card needed.
+
+1. Go to https://app.netlify.com/drop in your browser.
+2. Drag the ENTIRE "wellbiz-simple" folder from your computer straight
+   into that page (the big dashed box).
+3. Wait about 10-20 seconds. Netlify will give you a live web address
+   like "https://random-name-12345.netlify.app" — click it. Your
+   website is now live and anyone can visit it.
+4. (Optional but recommended) Click "Sign up" on that same page using
+   your email, so this site is saved to your account instead of being
+   temporary/anonymous. It's still free.
+5. (Optional) In your Netlify account, you can pick a nicer free
+   address (like "wellbizsolutions.netlify.app"), or connect your own
+   domain name (wellbizsolutions.org) later under Site Settings →
+   Domain Management. This part is optional — ask Claude for help with
+   it whenever you're ready.
+
+
+STEP 4 — ADDING REAL PHOTOS LATER
+------------------------------------
+Right now, a few spots on the site show a dashed placeholder box
+instead of a photo (for example, on the About page). Once you have
+real photos:
+- Simplest: send the photo(s) to Claude in a new chat, mention this
+  website, and ask for them to be added. Claude will hand you back an
+  updated folder — just repeat Step 3 (drag it into Netlify again) to
+  update your live site.
+- If you'd rather do it yourself, each placeholder in the HTML files
+  is labeled with the exact filename it expects (e.g.
+  "founder-juma-killaghai.jpg") — a web developer or tech-savvy friend
+  can swap these in quickly.
+
+
+STEP 5 — ADDING VIDEOS LATER
+-------------------------------
+- Simplest: send the video file to Claude in a new chat and ask for it
+  to be added to the Videos page. You'll get back an updated folder —
+  drag it into Netlify (Step 3) again to publish the update.
+- If you want to try it yourself: open "videos.html" in Notepad/
+  TextEdit, there are plain-English instructions written right inside
+  the file (look for "HOW TO ADD A VIDEO").
+
+
+STEP 6 — TURN ON BLOG COMMENTS (2 minutes, one time)
+--------------------------------------------------------
+Your new Blog page (7 posts, click "Blog" in the menu) has a comments
+section on each post, powered by a free service called Disqus. Like the
+contact form, it needs a one-time setup or the comment boxes won't
+appear.
+
+1. Go to https://disqus.com and click "Get Started," then choose
+   "I want to install Disqus on my site."
+2. Give your site a name (e.g. "Wellbiz Solutions") — Disqus will turn
+   this into a "shortname" like "wellbiz-solutions-1". Note that exact
+   shortname down.
+3. Open each blog post file in Notepad/TextEdit (files starting with
+   "blog-", e.g. "blog-reframing-your-money-story"). Use Find and
+   Replace (Ctrl+H / Cmd+H) to replace:
+       DISQUS_SHORTNAME
+   with your real shortname from step 2. Do this in all 6 blog post
+   files (not blog.html itself, which is just the listing page).
+4. Save each file, then re-publish (Step 3: drag the whole folder into
+   Netlify again).
+
+That's it — comments will now work on every post.
+
+
+STEP 7 — ADDING NEW BLOG POSTS LATER
+----------------------------------------
+Simplest: send Claude the new post's text (or the file, like you did
+for these first 6) in a new chat, mention this website, and ask for it
+to be added to the blog. You'll get back an updated folder — drag it
+into Netlify (Step 3) to publish.
+
+UPDATING YOUR SITE AFTER ANY CHANGE
+--------------------------------------
+Whenever you (or Claude) change a file in this folder, your LIVE site
+won't update on its own — you need to drag the whole folder into
+https://app.netlify.com (once you have an account, there's a "Deploys"
+tab with the same drag-and-drop box) one more time. Think of it like
+saving a document and then also having to click "publish."
+
+
+IF YOU GET STUCK
+-------------------
+Come back to this Claude conversation (or start a new one and upload
+this folder) and describe exactly what you're trying to do and what
+you're seeing on screen — that's enough for help to be given without
+needing any technical background from you.
