@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Wellbiz Solutions</title>
+<meta name="description" content="Get in touch with Wellbiz Solutions in Dar es Salaam — business registration, planning, and content services.">
+<link rel="icon" href="/assets/images/logo.png">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  .field{margin-bottom:20px;}
+  .field label{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px;color:var(--blue-bright);}
+  .field input, .field textarea, .field select{
+    width:100%;padding:13px 14px;border:1px solid var(--line-on-ink);
+    background:var(--ink-2);color:var(--light);font-family:var(--body);font-size:15px;border-radius:2px;
+  }
+  .field input::placeholder, .field textarea::placeholder{color:rgba(243,244,245,0.4);}
+  #formStatus{font-family:var(--mono);font-size:13px;margin-top:16px;min-height:20px;}
+  #formStatus.ok{color:#7fd18f;}
+  #formStatus.err{color:var(--maroon-bright);}
+  /* honeypot field, hidden from real users */
+  .hp{position:absolute;left:-9999px;top:-9999px;}
+</style>
+</head>
+<body data-page="contact">
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="header-root"></div>
+
+<main id="main">
+
+  <section class="page-hero on-ink" style="padding-bottom:0;">
+    <div class="wrap">
+      <div class="eyebrow">Get in Touch</div>
+      <h1>Let's bridge the gap together.</h1>
+      <p class="lede">Send a message and we'll get back to you — or reach us directly below.</p>
+    </div>
+  </section>
+
+  <section class="section-pad on-ink" style="padding-top:56px;">
+    <div class="wrap grid-2">
+      <!--
+        HOW THIS FORM WORKS (read me):
+        This form sends to a free service called Formspree, which forwards
+        it straight to your email inbox — no server needed on your end.
+
+        TO ACTIVATE IT (one-time, ~2 minutes):
+        1. Go to https://formspree.io and sign up free with your email.
+        2. Click "New Form", name it "Wellbiz Contact", and it will give you
+           a web address that looks like: https://formspree.io/f/abcd1234
+        3. Copy that address and paste it into the "action" attribute just
+           below, replacing YOUR_FORM_ID_HERE with your real ID (just the
+           "abcd1234" part, or the whole address — both work).
+        4. Save this file. That's it — the form now really sends email.
+
+        Until you do this, the form will show Formspree's own "not
+        configured" message instead of sending anywhere.
+      -->
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+        <div class="field hp">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required maxlength="100">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required maxlength="150">
+        </div>
+        <div class="field">
+          <label for="phone">Phone (optional)</label>
+          <input type="text" id="phone" name="phone" maxlength="40">
+        </div>
+        <div class="field">
+          <label for="subject">What do you need help with?</label>
+          <select id="subject" name="subject">
+            <option>Business Registration</option>
+            <option>Business or Strategic Planning</option>
+            <option>Content Creation</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required maxlength="2000"></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="New enquiry from wellbizsolutions.org">
+        <button class="btn btn-primary" type="submit">Send message</button>
+      </form>
+
+      <div>
+        <ul style="list-style:none;margin:0;padding:0;">
+          <li style="display:flex;gap:18px;font-size:15px;padding:16px 0;border-top:1px solid var(--line-on-ink);">
+            <span style="font-family:var(--mono);font-size:11.5px;color:var(--blue-bright);text-transform:uppercase;letter-spacing:.08em;min-width:110px;">Location</span>
+            <span>Mosque Street, Kitumbini, Dar es Salaam (opposite Sunni Mosque)</span>
+          </li>
+          <li style="display:flex;gap:18px;font-size:15px;padding:16px 0;border-top:1px solid var(--line-on-ink);">
+            <span style="font-family:var(--mono);font-size:11.5px;color:var(--blue-bright);text-transform:uppercase;letter-spacing:.08em;min-width:110px;">Founder</span>
+            <span>Juma Killaghai</span>
+          </li>
+          <li style="display:flex;gap:18px;font-size:15px;padding:16px 0;border-top:1px solid var(--line-on-ink);">
+            <span style="font-family:var(--mono);font-size:11.5px;color:var(--blue-bright);text-transform:uppercase;letter-spacing:.08em;min-width:110px;">Email</span>
+            <a href="mailto:info@wellbizsolutions.co.site">info@wellbizsolutions.co.site</a>
+          </li>
+          <li style="display:flex;gap:18px;font-size:15px;padding:16px 0;border-top:1px solid var(--line-on-ink);border-bottom:1px solid var(--line-on-ink);">
+            <span style="font-family:var(--mono);font-size:11.5px;color:var(--blue-bright);text-transform:uppercase;letter-spacing:.08em;min-width:110px;">Phone</span>
+            <span>+255 754 281 131 / +255 655 281 131</span>
+          </li>
+        </ul>
+        <div style="display:flex;gap:14px;margin-top:30px;">
+          <a href="https://www.linkedin.com/company/102675696/" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:12px;border:1px solid var(--line-on-ink);padding:9px 16px;border-radius:20px;text-decoration:none;">LinkedIn ↗</a>
+          <a href="https://www.instagram.com/wellbiz_commerce/" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:12px;border:1px solid var(--line-on-ink);padding:9px 16px;border-radius:20px;text-decoration:none;">Instagram ↗</a>
+        </div>
+        <div style="border-radius:2px; overflow:hidden; margin-top:30px;">
+          <img src="/CONTACT-PHOTO.jpg" alt="Wellbiz Solutions — welcoming a client" style="width:100%; height:auto; display:block;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-root"></div>
+<script src="/js/include.js"></script>
+</body>
+</html>
