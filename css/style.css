@@ -7,8 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 :root{
-  --ink:#1C3A50;           /* near-black, from wordmark */
+  --ink:#1C3A50;           /* near-black, from wordmark — kept as body text color, do not lighten */
   --ink-2:#142A3A;
+  --ink-bg:#3C5E7D;        /* lighter steel-navy, used ONLY for dark-section backgrounds (nav, footer, .on-ink) */
+  --ink-bg-2:#2E4A63;      /* lighter steel-navy, used for cards/footer on dark sections */
   --paper:#F1F2F3;         /* brushed-steel white, from plate */
   --paper-2:#E3E5E7;
   --maroon:#7C2B3B;        /* eagle */
@@ -40,7 +42,7 @@ a{color:inherit;}
 img{max-width:100%;display:block;}
 .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
 section{position:relative;}
-.on-ink{background:var(--ink);color:var(--light);}
+.on-ink{background:var(--ink-bg);color:var(--light);}
 .on-ink .rule{background:var(--line-on-ink);}
 .on-paper{background:var(--paper);color:var(--ink);}
 
@@ -77,7 +79,7 @@ p{margin:0 0 1em;}
 /* ---------- NAV ---------- */
 header.nav{
   position:sticky;top:0;z-index:50;
-  background:rgba(28,58,80,0.94);
+  background:rgba(60,94,125,0.94);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line-on-ink);
 }
@@ -233,7 +235,7 @@ nav.links a:focus-visible, a:focus-visible, button:focus-visible, input:focus-vi
 
 /* ---------- FOOTER ---------- */
 footer.site-footer{
-  background:var(--ink-2);
+  background:var(--ink-bg-2);
   color:var(--light);
   padding:70px 0 30px;
 }
@@ -275,7 +277,7 @@ footer.site-footer{
   padding:32px 30px;
   border-radius:2px;
 }
-.on-ink .card{background:var(--ink-2);border-color:var(--line-on-ink);}
+.on-ink .card{background:var(--ink-bg-2);border-color:var(--line-on-ink);}
 
 /* Skip link */
 .skip-link{
