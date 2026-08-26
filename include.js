@@ -41,7 +41,19 @@
     if (yearEl) yearEl.textContent = new Date().getFullYear();
   }
 
+  // GoatCounter analytics. Loaded here (as a dynamically-created element)
+  // rather than as a <script> tag inside the header/footer partials, since
+  // tags injected via innerHTML never execute in the browser.
+  function loadAnalytics() {
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = '//gc.zgo.at/count.js';
+    s.setAttribute('data-goatcounter', 'https://wellbizsolutions.goatcounter.com/count');
+    document.body.appendChild(s);
+  }
+
   document.addEventListener('DOMContentLoaded', async () => {
+    loadAnalytics();
     await loadPartial('#header-root', '/partials/header.html');
     initHeader();
     await loadPartial('#footer-root', '/partials/footer.html');
