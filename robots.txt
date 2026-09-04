@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wellbizsolutions.co.site/sitemap.xml
