@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Amortization Calculator — Wellbiz Solutions</title>
+<meta name="description" content="Free loan amortization calculator — see a full month-by-month repayment schedule for any loan, with or without interest, in any currency.">
+<link rel="icon" href="/assets/images/logo.png">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  .calc-card{max-width:760px;margin:0 auto;}
+  .unit-toggle{display:flex;gap:0;margin-bottom:28px;border:1px solid var(--line-on-paper);border-radius:2px;overflow:hidden;width:fit-content;}
+  .unit-toggle button{
+    font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;
+    padding:11px 20px;border:none;background:var(--light);color:var(--ink);opacity:.55;cursor:pointer;
+    transition:background .18s ease, color .18s ease, opacity .18s ease;
+  }
+  .unit-toggle button.active{background:var(--maroon);color:var(--light);opacity:1;}
+  .field{margin-bottom:20px;}
+  .field label{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px;color:var(--maroon);}
+  .field input{
+    width:100%;padding:13px 14px;border:1px solid var(--line-on-paper);
+    background:var(--light);color:var(--ink);font-family:var(--body);font-size:15px;border-radius:2px;
+  }
+  .field input::placeholder{color:rgba(28,58,80,0.35);}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media (max-width:520px){ .field-row{grid-template-columns:1fr;} }
+  #rateField{display:none;}
+  #rateField.show{display:block;}
+
+  #amortResult{margin-top:28px;display:none;}
+  #amortResult.show{display:block;}
+  .summary-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:28px;}
+  @media (max-width:520px){ .summary-grid{grid-template-columns:1fr;} }
+  .summary-stat{padding:18px 20px;border-radius:2px;background:var(--paper-2);border:1px solid var(--line-on-paper);}
+  .summary-stat .label{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--maroon);margin-bottom:8px;}
+  .summary-stat .amount{font-family:var(--display);font-size:22px;line-height:1.2;}
+
+  .table-wrap{max-height:420px;overflow:auto;border:1px solid var(--line-on-paper);border-radius:2px;}
+  table.amort-table{width:100%;border-collapse:collapse;font-size:14px;}
+  table.amort-table th, table.amort-table td{padding:10px 14px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line-on-paper);}
+  table.amort-table th:first-child, table.amort-table td:first-child{text-align:left;}
+  table.amort-table thead th{
+    position:sticky;top:0;background:var(--paper-2);font-family:var(--mono);font-size:11px;
+    letter-spacing:.05em;text-transform:uppercase;color:var(--maroon);z-index:1;
+  }
+  table.amort-table tbody tr:last-child td{border-bottom:none;}
+</style>
+</head>
+<body data-page="tools">
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="header-root"></div>
+
+<main id="main">
+
+  <section class="page-hero on-ink">
+    <div class="wrap">
+      <div class="eyebrow">Finance Tool</div>
+      <h1>Loan Amortization Calculator</h1>
+      <p class="lede">Full month-by-month repayment schedule, with or without interest, in any currency.</p>
+    </div>
+  </section>
+
+  <section class="section-pad on-paper">
+    <div class="wrap">
+      <div class="card calc-card">
+        <div class="unit-toggle" id="modeToggle">
+          <button type="button" data-mode="zero" class="active">Zero Interest</button>
+          <button type="button" data-mode="interest">With Interest</button>
+        </div>
+
+        <form id="amortForm">
+          <div class="field-row">
+            <div class="field">
+              <label for="currency">Currency label</label>
+              <input type="text" id="currency" maxlength="8" placeholder="e.g. TZS" value="TZS">
+            </div>
+            <div class="field">
+              <label for="amount">Loan amount</label>
+              <input type="number" id="amount" inputmode="decimal" step="0.01" min="0" placeholder="e.g. 5000000" required>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="term">Term (months)</label>
+              <input type="number" id="term" inputmode="numeric" step="1" min="1" placeholder="e.g. 12" required>
+            </div>
+            <div class="field" id="rateField">
+              <label for="rate">Annual interest rate (%)</label>
+              <input type="number" id="rate" inputmode="decimal" step="0.01" min="0" placeholder="e.g. 12">
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Calculate schedule</button>
+        </form>
+
+        <div id="amortResult">
+          <div class="summary-grid">
+            <div class="summary-stat">
+              <div class="label">Monthly payment</div>
+              <div class="amount" id="statPayment"></div>
+            </div>
+            <div class="summary-stat">
+              <div class="label">Total interest</div>
+              <div class="amount" id="statInterest"></div>
+            </div>
+            <div class="summary-stat">
+              <div class="label">Total repaid</div>
+              <div class="amount" id="statTotal"></div>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="amort-table">
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Payment</th>
+                  <th>Principal</th>
+                  <th>Interest</th>
+                  <th>Balance</th>
+                </tr>
+              </thead>
+              <tbody id="amortRows"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad on-ink" style="padding-top:0;padding-bottom:70px;">
+    <div class="wrap" style="text-align:center;">
+      <a class="btn btn-ghost" href="/tools.html">← Back to all tools</a>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-root"></div>
+<script src="/js/include.js"></script>
+<script>
+(function(){
+  var mode = 'zero';
+  var toggle = document.getElementById('modeToggle');
+  var rateField = document.getElementById('rateField');
+  var rateInput = document.getElementById('rate');
+  var form = document.getElementById('amortForm');
+  var resultBox = document.getElementById('amortResult');
+  var statPayment = document.getElementById('statPayment');
+  var statInterest = document.getElementById('statInterest');
+  var statTotal = document.getElementById('statTotal');
+  var rowsBody = document.getElementById('amortRows');
+
+  function setMode(m){
+    mode = m;
+    Array.prototype.forEach.call(toggle.querySelectorAll('button'), function(b){
+      b.classList.toggle('active', b.getAttribute('data-mode') === m);
+    });
+    rateField.classList.toggle('show', m === 'interest');
+    rateInput.required = (m === 'interest');
+    resultBox.classList.remove('show');
+  }
+
+  toggle.addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-mode]');
+    if(btn) setMode(btn.getAttribute('data-mode'));
+  });
+
+  function formatMoney(n, currency){
+    var formatted = n.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+    return currency ? (currency + ' ' + formatted) : formatted;
+  }
+
+  function buildSchedule(principal, months, annualRatePct){
+    var r = annualRatePct ? (annualRatePct / 100) / 12 : 0;
+    var rows = [];
+    var balance = principal;
+    var payment, totalInterest = 0;
+
+    if(r === 0){
+      payment = principal / months;
+      for(var i = 1; i <= months; i++){
+        var principalPortion = payment;
+        balance -= principalPortion;
+        if(i === months) balance = 0;
+        rows.push({month:i, payment:payment, principal:principalPortion, interest:0, balance:Math.max(balance,0)});
+      }
+    } else {
+      payment = principal * r * Math.pow(1 + r, months) / (Math.pow(1 + r, months) - 1);
+      for(var j = 1; j <= months; j++){
+        var interest = balance * r;
+        var principalPart = payment - interest;
+        balance -= principalPart;
+        if(j === months) balance = 0;
+        totalInterest += interest;
+        rows.push({month:j, payment:payment, principal:principalPart, interest:interest, balance:Math.max(balance,0)});
+      }
+    }
+
+    return {
+      payment: payment,
+      totalInterest: totalInterest,
+      totalPaid: principal + totalInterest,
+      rows: rows
+    };
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var currency = document.getElementById('currency').value.trim();
+    var amount = parseFloat(document.getElementById('amount').value);
+    var term = parseInt(document.getElementById('term').value, 10);
+    var rate = mode === 'interest' ? parseFloat(rateInput.value) || 0 : 0;
+
+    if(!amount || amount <= 0 || !term || term <= 0) return;
+
+    var schedule = buildSchedule(amount, term, rate);
+
+    statPayment.textContent = formatMoney(schedule.payment, currency);
+    statInterest.textContent = formatMoney(schedule.totalInterest, currency);
+    statTotal.textContent = formatMoney(schedule.totalPaid, currency);
+
+    rowsBody.innerHTML = schedule.rows.map(function(row){
+      return '<tr>' +
+        '<td>' + row.month + '</td>' +
+        '<td>' + formatMoney(row.payment, currency) + '</td>' +
+        '<td>' + formatMoney(row.principal, currency) + '</td>' +
+        '<td>' + formatMoney(row.interest, currency) + '</td>' +
+        '<td>' + formatMoney(row.balance, currency) + '</td>' +
+        '</tr>';
+    }).join('');
+
+    resultBox.classList.add('show');
+  });
+})();
+</script>
+</body>
+</html>
