@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMI Calculator — Wellbiz Solutions</title>
+<meta name="description" content="Free BMI calculator — work out your Body Mass Index from your height and weight, in metric or imperial units. No sign-up required.">
+<link rel="icon" href="/assets/images/logo.png">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  .calc-card{max-width:640px;margin:0 auto;}
+  .unit-toggle{display:flex;gap:0;margin-bottom:28px;border:1px solid var(--line-on-paper);border-radius:2px;overflow:hidden;width:fit-content;}
+  .unit-toggle button{
+    font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;
+    padding:11px 20px;border:none;background:var(--light);color:var(--ink);opacity:.55;cursor:pointer;
+    transition:background .18s ease, color .18s ease, opacity .18s ease;
+  }
+  .unit-toggle button.active{background:var(--maroon);color:var(--light);opacity:1;}
+  .field{margin-bottom:20px;}
+  .field label{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px;color:var(--maroon);}
+  .field input{
+    width:100%;padding:13px 14px;border:1px solid var(--line-on-paper);
+    background:var(--light);color:var(--ink);font-family:var(--body);font-size:15px;border-radius:2px;
+  }
+  .field input::placeholder{color:rgba(28,58,80,0.35);}
+  #bmiResult{margin-top:28px;padding:24px 26px;border-radius:2px;background:var(--paper-2);border:1px solid var(--line-on-paper);display:none;}
+  #bmiResult.show{display:block;}
+  #bmiResult .value{font-family:var(--display);font-size:40px;color:var(--maroon);line-height:1;}
+  #bmiResult .category{font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;margin-top:8px;color:var(--ink);opacity:.75;}
+  #bmiResult .scale{font-size:13.5px;opacity:.65;margin-top:14px;}
+</style>
+</head>
+<body data-page="tools">
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="header-root"></div>
+
+<main id="main">
+
+  <section class="page-hero on-ink">
+    <div class="wrap">
+      <div class="eyebrow">Health Tool</div>
+      <h1>BMI Calculator</h1>
+      <p class="lede">Work out your Body Mass Index in seconds.</p>
+    </div>
+  </section>
+
+  <section class="section-pad on-paper">
+    <div class="wrap">
+      <div class="card calc-card">
+        <div class="unit-toggle" id="unitToggle">
+          <button type="button" data-unit="metric" class="active">Metric (kg/cm)</button>
+          <button type="button" data-unit="imperial">Imperial (lb/in)</button>
+        </div>
+
+        <form id="bmiForm">
+          <div class="field">
+            <label for="weight" id="weightLabel">Weight (kg)</label>
+            <input type="number" id="weight" inputmode="decimal" step="0.1" min="0" placeholder="e.g. 70" required>
+          </div>
+          <div class="field">
+            <label for="height" id="heightLabel">Height (cm)</label>
+            <input type="number" id="height" inputmode="decimal" step="0.1" min="0" placeholder="e.g. 170" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Calculate BMI</button>
+        </form>
+
+        <div id="bmiResult">
+          <div class="value" id="bmiValue"></div>
+          <div class="category" id="bmiCategory"></div>
+          <div class="scale">Under 18.5 Underweight · 18.5–24.9 Normal · 25–29.9 Overweight · 30+ Obese</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad on-ink" style="padding-top:0;padding-bottom:70px;">
+    <div class="wrap" style="text-align:center;">
+      <a class="btn btn-ghost" href="/tools.html">← Back to all tools</a>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-root"></div>
+<script src="/js/include.js"></script>
+<script>
+(function(){
+  var unit = 'metric';
+  var toggle = document.getElementById('unitToggle');
+  var weightLabel = document.getElementById('weightLabel');
+  var heightLabel = document.getElementById('heightLabel');
+  var weightInput = document.getElementById('weight');
+  var heightInput = document.getElementById('height');
+  var form = document.getElementById('bmiForm');
+  var resultBox = document.getElementById('bmiResult');
+  var valueEl = document.getElementById('bmiValue');
+  var categoryEl = document.getElementById('bmiCategory');
+
+  function setUnit(u){
+    unit = u;
+    Array.prototype.forEach.call(toggle.querySelectorAll('button'), function(b){
+      var isActive = b.getAttribute('data-unit') === u;
+      b.classList.toggle('active', isActive);
+    });
+    if(u === 'metric'){
+      weightLabel.textContent = 'Weight (kg)';
+      heightLabel.textContent = 'Height (cm)';
+      weightInput.placeholder = 'e.g. 70';
+      heightInput.placeholder = 'e.g. 170';
+    } else {
+      weightLabel.textContent = 'Weight (lb)';
+      heightLabel.textContent = 'Height (in)';
+      weightInput.placeholder = 'e.g. 154';
+      heightInput.placeholder = 'e.g. 67';
+    }
+    resultBox.classList.remove('show');
+  }
+
+  toggle.addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-unit]');
+    if(btn) setUnit(btn.getAttribute('data-unit'));
+  });
+
+  function categoryFor(bmi){
+    if(bmi < 18.5) return 'Underweight';
+    if(bmi < 25) return 'Normal weight';
+    if(bmi < 30) return 'Overweight';
+    return 'Obese';
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var w = parseFloat(weightInput.value);
+    var h = parseFloat(heightInput.value);
+    if(!w || !h || w <= 0 || h <= 0) return;
+
+    var bmi;
+    if(unit === 'metric'){
+      var hMeters = h / 100;
+      bmi = w / (hMeters * hMeters);
+    } else {
+      bmi = (703 * w) / (h * h);
+    }
+
+    valueEl.textContent = bmi.toFixed(1);
+    categoryEl.textContent = categoryFor(bmi);
+    resultBox.classList.add('show');
+  });
+})();
+</script>
+</body>
+</html>
