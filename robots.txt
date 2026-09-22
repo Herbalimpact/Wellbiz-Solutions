@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wellbizsolutions.co.site/sitemap.xml
+Sitemap: https://www.wellbizsolutions.co.site/sitemap.xml

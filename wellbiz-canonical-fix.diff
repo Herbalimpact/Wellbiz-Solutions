@@ -1,0 +1,637 @@
+diff --git a/about.html b/about.html
+index ed6c928..dc2a1a2 100644
+--- a/about.html
++++ b/about.html
+@@ -7,7 +7,7 @@
+   <meta name="description" content="Wellbiz Solutions was founded by Juma Killaghai, bringing over two decades of experience to supporting Tanzanian businesses and individuals.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/about.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/about.html">
+ </head>
+ <body data-page="about">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/amortization-calculator.html b/amortization-calculator.html
+index 787aabe..9ed36cc 100644
+--- a/amortization-calculator.html
++++ b/amortization-calculator.html
+@@ -46,6 +46,7 @@
+   }
+   table.amort-table tbody tr:last-child td{border-bottom:none;}
+ </style>
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/amortization-calculator.html">
+ </head>
+ <body data-page="tools">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-brela-post-certificate-compliance-tanzania-sw.html b/blog-brela-post-certificate-compliance-tanzania-sw.html
+index 63c0d24..20cc399 100644
+--- a/blog-brela-post-certificate-compliance-tanzania-sw.html
++++ b/blog-brela-post-certificate-compliance-tanzania-sw.html
+@@ -8,7 +8,7 @@
+ <meta name="keywords" content="baada ya cheti cha BRELA, uzingatiaji wa sheria baada ya usajili Tanzania, TIN Tanzania, leseni ya biashara Tanzania, usajili NSSF WCF, taarifa za mwaka BRELA, mashine ya EFD">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-brela-post-certificate-compliance-tanzania-sw.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-brela-post-certificate-compliance-tanzania-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-brela-post-certificate-compliance-tanzania.html b/blog-brela-post-certificate-compliance-tanzania.html
+index 0256e54..07640ba 100644
+--- a/blog-brela-post-certificate-compliance-tanzania.html
++++ b/blog-brela-post-certificate-compliance-tanzania.html
+@@ -8,7 +8,7 @@
+ <meta name="keywords" content="BRELA certificate next steps Tanzania, post incorporation compliance Tanzania, TIN registration Tanzania, business license Tanzania, NSSF WCF registration, BRELA annual returns, EFD machine registration">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-brela-post-certificate-compliance-tanzania.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-brela-post-certificate-compliance-tanzania.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-brela-registration-mistakes-sw.html b/blog-brela-registration-mistakes-sw.html
+index 71e0165..6874f8c 100644
+--- a/blog-brela-registration-mistakes-sw.html
++++ b/blog-brela-registration-mistakes-sw.html
+@@ -8,7 +8,7 @@
+ <meta name="keywords" content="makosa ya usajili wa BRELA, kuchelewa kwa ORS Tanzania, usajili wa kampuni Tanzania, kuhifadhi jina la biashara BRELA, tamko la umiliki halisi wa manufaa, taarifa za mwaka BRELA, TIN Tanzania">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-brela-registration-mistakes-sw.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-brela-registration-mistakes-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-brela-registration-mistakes.html b/blog-brela-registration-mistakes.html
+index ba2b587..469e96f 100644
+--- a/blog-brela-registration-mistakes.html
++++ b/blog-brela-registration-mistakes.html
+@@ -8,7 +8,7 @@
+ <meta name="keywords" content="BRELA registration mistakes, ORS Tanzania delays, company registration Tanzania, business name reservation BRELA, beneficial ownership declaration Tanzania, BRELA annual returns, TIN Tanzania">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-brela-registration-mistakes.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-brela-registration-mistakes.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-business-name-vs-limited-company-tanzania-sw.html b/blog-business-name-vs-limited-company-tanzania-sw.html
+index e7a159b..8ea1700 100644
+--- a/blog-business-name-vs-limited-company-tanzania-sw.html
++++ b/blog-business-name-vs-limited-company-tanzania-sw.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="jina la biashara au kampuni Tanzania, usajili wa jina la biashara BRELA, kampuni yenye ukomo wa dhima Tanzania, usajili wa kampuni Tanzania, usajili wa uwekezaji TIC, usajili wa biashara Tanzania">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-business-name-vs-limited-company-tanzania-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-business-name-vs-limited-company-tanzania.html b/blog-business-name-vs-limited-company-tanzania.html
+index b4f9f42..70040c4 100644
+--- a/blog-business-name-vs-limited-company-tanzania.html
++++ b/blog-business-name-vs-limited-company-tanzania.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="business name vs limited company Tanzania, BRELA business name registration, limited liability company Tanzania, company registration Tanzania, TIC investment registration, business registration Tanzania">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-business-name-vs-limited-company-tanzania.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-create-your-perfect-resume.html b/blog-create-your-perfect-resume.html
+index cead090..9ff9c3c 100644
+--- a/blog-create-your-perfect-resume.html
++++ b/blog-create-your-perfect-resume.html
+@@ -7,6 +7,7 @@
+ <meta name="description" content="An essential tool for effective personal branding — from professional summaries to beating the ATS.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-create-your-perfect-resume.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-emotional-intelligence-hiring-sw.html b/blog-emotional-intelligence-hiring-sw.html
+index bccfc1e..cf39aea 100644
+--- a/blog-emotional-intelligence-hiring-sw.html
++++ b/blog-emotional-intelligence-hiring-sw.html
+@@ -8,7 +8,7 @@
+ <meta name="keywords" content="emotional intelligence, EQ, ajira, uongozi, uajiri, saikolojia ya kazi, Charles Schwab">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-emotional-intelligence-hiring-sw.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-emotional-intelligence-hiring-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-emotional-intelligence-hiring.html b/blog-emotional-intelligence-hiring.html
+index e60416c..2fbb834 100644
+--- a/blog-emotional-intelligence-hiring.html
++++ b/blog-emotional-intelligence-hiring.html
+@@ -8,7 +8,7 @@
+ <meta name="keywords" content="emotional intelligence, EQ, hiring, leadership, recruitment, workplace psychology, Charles Schwab">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-emotional-intelligence-hiring.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-emotional-intelligence-hiring.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-employee-who-never-sleeps-sw.html b/blog-employee-who-never-sleeps-sw.html
+index 90fe9d2..b3aa96e 100644
+--- a/blog-employee-who-never-sleeps-sw.html
++++ b/blog-employee-who-never-sleeps-sw.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="umuhimu wa tovuti, faida za tovuti kwa biashara, mauzo ya mtandaoni masaa 24/7, uaminifu wa tovuti, uwepo wa kidijitali kwa biashara ndogo">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-employee-who-never-sleeps-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-employee-who-never-sleeps.html b/blog-employee-who-never-sleeps.html
+index 744f53c..db10a89 100644
+--- a/blog-employee-who-never-sleeps.html
++++ b/blog-employee-who-never-sleeps.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="importance of a website, business website benefits, 24/7 online sales, website credibility, digital presence for small business">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-employee-who-never-sleeps.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-erb-registration-engineers-tanzania-sw.html b/blog-erb-registration-engineers-tanzania-sw.html
+index 5486f3c..c369ec2 100644
+--- a/blog-erb-registration-engineers-tanzania-sw.html
++++ b/blog-erb-registration-engineers-tanzania-sw.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="usajili wa ERB Tanzania, Bodi ya Usajili wa Wahandisi, mhandisi aliyesajiliwa Tanzania, usajili wa kampuni ya ushauri wa uhandisi, Mhandisi Mtaalamu Tanzania, Mshauri wa Uhandisi Tanzania">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-erb-registration-engineers-tanzania-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-erb-registration-engineers-tanzania.html b/blog-erb-registration-engineers-tanzania.html
+index 7ddf867..5e6587a 100644
+--- a/blog-erb-registration-engineers-tanzania.html
++++ b/blog-erb-registration-engineers-tanzania.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="ERB registration Tanzania, Engineers Registration Board, registered engineer Tanzania, engineering consulting firm registration, Professional Engineer Tanzania, Consulting Engineer Tanzania, BRELA vs ERB">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-erb-registration-engineers-tanzania.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-facebook-account-recovery.html b/blog-facebook-account-recovery.html
+index ad95f68..f1d10d4 100644
+--- a/blog-facebook-account-recovery.html
++++ b/blog-facebook-account-recovery.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="Why so many people are getting locked out of their Facebook accounts, what the appeal process actually looks like, and what would actually fix it.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-facebook-account-recovery.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-facebook-account-recovery.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-importance-of-a-website-for-business.html b/blog-importance-of-a-website-for-business.html
+index c3589ec..c9f414d 100644
+--- a/blog-importance-of-a-website-for-business.html
++++ b/blog-importance-of-a-website-for-business.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="Still relying on word-of-mouth and social media alone? Here's why a professional website is one of the smartest investments a small business can make.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-importance-of-a-website-for-business.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-importance-of-a-website-for-business.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-marketing-hacks-small-business-sw.html b/blog-marketing-hacks-small-business-sw.html
+index b9284d9..87a30af 100644
+--- a/blog-marketing-hacks-small-business-sw.html
++++ b/blog-marketing-hacks-small-business-sw.html
+@@ -8,7 +8,7 @@
+ <meta name="keywords" content="uuzaji wa biashara ndogo, mbinu za uuzaji, ukuaji wa biashara ndogo, kuvutia wateja, kuendelea kwa biashara ndogo">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-marketing-hacks-small-business-sw.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-marketing-hacks-small-business-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-marketing-hacks-small-business.html b/blog-marketing-hacks-small-business.html
+index 5d3c11a..b2239ce 100644
+--- a/blog-marketing-hacks-small-business.html
++++ b/blog-marketing-hacks-small-business.html
+@@ -8,7 +8,7 @@
+ <meta name="keywords" content="small business marketing, marketing hacks, small business growth, customer acquisition, small business survival">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-marketing-hacks-small-business.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-marketing-hacks-small-business.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-power-of-micro-businesses.html b/blog-power-of-micro-businesses.html
+index 9c3f3ae..3eecdd1 100644
+--- a/blog-power-of-micro-businesses.html
++++ b/blog-power-of-micro-businesses.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="Why splitting your capital across many small ventures can outperform betting it all on one big idea.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-power-of-micro-businesses.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-power-of-micro-businesses.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-reframing-your-money-story.html b/blog-reframing-your-money-story.html
+index deaf9fc..d84171f 100644
+--- a/blog-reframing-your-money-story.html
++++ b/blog-reframing-your-money-story.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="Simple, effective ways to break the cycle of money stress — and rewrite the beliefs about money you didn't know you were carrying since childhood.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-reframing-your-money-story.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-reframing-your-money-story.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-register-business-tanzania-2026-sw.html b/blog-register-business-tanzania-2026-sw.html
+index 25144c4..e1f09ae 100644
+--- a/blog-register-business-tanzania-2026-sw.html
++++ b/blog-register-business-tanzania-2026-sw.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="kusajili biashara Tanzania, usajili wa BRELA, TIN Tanzania, leseni ya biashara Tanzania, usajili wa kampuni Tanzania 2026, TIN mtandaoni TRA">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-register-business-tanzania-2026-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-register-business-tanzania-2026.html b/blog-register-business-tanzania-2026.html
+index ea117bd..cb49873 100644
+--- a/blog-register-business-tanzania-2026.html
++++ b/blog-register-business-tanzania-2026.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="register a business in Tanzania, BRELA registration, TIN Tanzania, business license Tanzania, company registration Tanzania 2026, TRA TIN online">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-register-business-tanzania-2026.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-rita-registration-tanzania-sw.html b/blog-rita-registration-tanzania-sw.html
+index cd6e43e..f129eba 100644
+--- a/blog-rita-registration-tanzania-sw.html
++++ b/blog-rita-registration-tanzania-sw.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="usajili wa RITA Tanzania, Wakala wa Usajili Ufilisi na Udhamini, usajili wa amana Tanzania, sheria ya udhamini, usajili wa NGO Tanzania, usajili wa jina la biashara BRELA">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-rita-registration-tanzania-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-rita-registration-tanzania.html b/blog-rita-registration-tanzania.html
+index 3c78703..56e19ad 100644
+--- a/blog-rita-registration-tanzania.html
++++ b/blog-rita-registration-tanzania.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="RITA registration Tanzania, Registration Insolvency and Trusteeship Agency, trust registration Tanzania, Trustees Incorporation Act, NGO registration Tanzania, business name registration BRELA, RITA vs BRELA">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-rita-registration-tanzania.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-self-connection-success.html b/blog-self-connection-success.html
+index a3842c0..f39fc44 100644
+--- a/blog-self-connection-success.html
++++ b/blog-self-connection-success.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="Why real, lasting success grows from a deep connection with yourself — not non-stop achievement.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-self-connection-success.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-self-connection-success.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-technology-failing-facebook.html b/blog-technology-failing-facebook.html
+index 958ff8c..8c16aba 100644
+--- a/blog-technology-failing-facebook.html
++++ b/blog-technology-failing-facebook.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="A look at the customer service and automated decision-making problems threatening the platform's future.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog-technology-failing-facebook.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-technology-failing-facebook.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-tic-investment-registration-tanzania-sw.html b/blog-tic-investment-registration-tanzania-sw.html
+index 6548349..dc4d1a0 100644
+--- a/blog-tic-investment-registration-tanzania-sw.html
++++ b/blog-tic-investment-registration-tanzania-sw.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="usajili wa uwekezaji TIC Tanzania, cheti cha Kituo cha Uwekezaji Tanzania, cheti cha vivutio TIC, Mamlaka ya Uwekezaji na Kanda Maalum za Kiuchumi Tanzania, vivutio vya uwekezaji Tanzania, BRELA dhidi ya TIC">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-tic-investment-registration-tanzania-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-tic-investment-registration-tanzania.html b/blog-tic-investment-registration-tanzania.html
+index 14f165c..f16e525 100644
+--- a/blog-tic-investment-registration-tanzania.html
++++ b/blog-tic-investment-registration-tanzania.html
+@@ -8,6 +8,7 @@
+ <meta name="keywords" content="TIC investment registration Tanzania, Tanzania Investment Centre certificate, TIC certificate of incentives, Tanzania Investment and Special Economic Zones Authority, investment incentives Tanzania, BRELA vs TIC">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-tic-investment-registration-tanzania.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog-umuhimu-wa-tovuti-kwa-biashara-sw.html b/blog-umuhimu-wa-tovuti-kwa-biashara-sw.html
+index b48587e..ece3eb8 100644
+--- a/blog-umuhimu-wa-tovuti-kwa-biashara-sw.html
++++ b/blog-umuhimu-wa-tovuti-kwa-biashara-sw.html
+@@ -7,6 +7,7 @@
+ <meta name="description" content="Je, biashara yako ina tovuti? Kama hapana, huenda unapoteza wateja kila siku bila kujua. Tazama kwa nini tovuti ni muhimu sana kwa biashara yoyote leo.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog-umuhimu-wa-tovuti-kwa-biashara-sw.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/blog.html b/blog.html
+index 8c5a426..4615354 100644
+--- a/blog.html
++++ b/blog.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="Articles on business, career, personal finance, personal growth, and technology from Wellbiz Solutions.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/blog.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/blog.html">
+ </head>
+ <body data-page="blog">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/bmi-calculator.html b/bmi-calculator.html
+index e37b886..d9f8472 100644
+--- a/bmi-calculator.html
++++ b/bmi-calculator.html
+@@ -29,6 +29,7 @@
+   #bmiResult .category{font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;margin-top:8px;color:var(--ink);opacity:.75;}
+   #bmiResult .scale{font-size:13.5px;opacity:.65;margin-top:14px;}
+ </style>
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/bmi-calculator.html">
+ </head>
+ <body data-page="tools">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/contact.html b/contact.html
+index 1f46246..af8f011 100644
+--- a/contact.html
++++ b/contact.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="Get in touch with Wellbiz Solutions in Dar es Salaam — business registration, planning, and content services.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/contact.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/contact.html">
+ <style>
+   .field{margin-bottom:20px;}
+   .field label{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px;color:var(--blue-bright);}
+diff --git a/downloads.html b/downloads.html
+index 6403ddb..8b0ff8a 100644
+--- a/downloads.html
++++ b/downloads.html
+@@ -41,6 +41,7 @@ border:1px solid var(--maroon);
+ }
+ .download-btn.secondary:hover{background:var(--maroon);color:var(--light) !important;}
+ </style>
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/downloads.html">
+ </head>
+ <body data-page="downloads">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/ebooks.html b/ebooks.html
+index 5a2aab6..7f6f055 100644
+--- a/ebooks.html
++++ b/ebooks.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="E-books, guides, courses, and templates from Wellbiz Solutions — business planning, personal finance, health & wellness, and more.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/ebooks.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/ebooks.html">
+ <!-- Payhip: required so the "Buy Now" buttons below open a secure checkout
+      instead of just linking away to Payhip's site. -->
+ <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+diff --git a/index.html b/index.html
+index d0c765f..771ae96 100644
+--- a/index.html
++++ b/index.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="From business registration and strategic planning to content creation and coaching, Wellbiz Solutions brings two decades of expertise to your journey.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/">
+ </head>
+ <body data-page="home">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/robots.txt b/robots.txt
+index 9dc885e..c9f684e 100644
+--- a/robots.txt
++++ b/robots.txt
+@@ -1,4 +1,4 @@
+ User-agent: *
+ Allow: /
+ 
+-Sitemap: https://wellbizsolutions.co.site/sitemap.xml
++Sitemap: https://www.wellbizsolutions.co.site/sitemap.xml
+diff --git a/services.html b/services.html
+index e3022e4..d3bd162 100644
+--- a/services.html
++++ b/services.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="Business registration, planning, accounting, website design, training, and content-creation services from Wellbiz Solutions.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/services.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/services.html">
+ </head>
+ <body data-page="services">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/sitemap.xml b/sitemap.xml
+index a818124..30a3ca7 100644
+--- a/sitemap.xml
++++ b/sitemap.xml
+@@ -2,81 +2,81 @@
+ <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ 
+   <!-- Core pages -->
+-  <url><loc>https://wellbizsolutions.co.site/</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/about.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/services.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/work.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/contact.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/ebooks.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/downloads.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/videos.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/about.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/services.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/work.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/contact.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/ebooks.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/downloads.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/videos.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog.html</loc></url>
+ 
+   <!-- Tools -->
+-  <url><loc>https://wellbizsolutions.co.site/tools.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/bmi-calculator.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/amortization-calculator.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/tools.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/bmi-calculator.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/amortization-calculator.html</loc></url>
+ 
+   <!-- Why Emotional Intelligence Beats Credentials in Hiring -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-emotional-intelligence-hiring.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-emotional-intelligence-hiring-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-emotional-intelligence-hiring.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-emotional-intelligence-hiring-sw.html</loc></url>
+ 
+   <!-- Blog posts: BRELA post-certificate compliance -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-brela-post-certificate-compliance-tanzania.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-brela-post-certificate-compliance-tanzania-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-brela-post-certificate-compliance-tanzania.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-brela-post-certificate-compliance-tanzania-sw.html</loc></url>
+ 
+   <!-- ERB registration -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-erb-registration-engineers-tanzania.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-erb-registration-engineers-tanzania-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-erb-registration-engineers-tanzania.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-erb-registration-engineers-tanzania-sw.html</loc></url>
+ 
+   <!-- TIC investment registration -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-tic-investment-registration-tanzania.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-tic-investment-registration-tanzania-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-tic-investment-registration-tanzania.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-tic-investment-registration-tanzania-sw.html</loc></url>
+ 
+   <!-- Business Name vs Limited Company -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-business-name-vs-limited-company-tanzania.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-business-name-vs-limited-company-tanzania-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-business-name-vs-limited-company-tanzania.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-business-name-vs-limited-company-tanzania-sw.html</loc></url>
+ 
+   <!-- BRELA registration mistakes -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-brela-registration-mistakes.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-brela-registration-mistakes-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-brela-registration-mistakes.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-brela-registration-mistakes-sw.html</loc></url>
+ 
+   <!-- RITA registration -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-rita-registration-tanzania.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-rita-registration-tanzania-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-rita-registration-tanzania.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-rita-registration-tanzania-sw.html</loc></url>
+ 
+   <!-- How to register a business in Tanzania 2026 -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-register-business-tanzania-2026.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-register-business-tanzania-2026-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-register-business-tanzania-2026.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-register-business-tanzania-2026-sw.html</loc></url>
+ 
+   <!-- Employee who never sleeps -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-employee-who-never-sleeps.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-employee-who-never-sleeps-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-employee-who-never-sleeps.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-employee-who-never-sleeps-sw.html</loc></url>
+ 
+   <!-- Why your business needs a website -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-importance-of-a-website-for-business.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-umuhimu-wa-tovuti-kwa-biashara-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-importance-of-a-website-for-business.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-umuhimu-wa-tovuti-kwa-biashara-sw.html</loc></url>
+ 
+   <!-- 5 marketing hacks -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-marketing-hacks-small-business.html</loc></url>
+-  <url><loc>https://wellbizsolutions.co.site/blog-marketing-hacks-small-business-sw.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-marketing-hacks-small-business.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-marketing-hacks-small-business-sw.html</loc></url>
+ 
+   <!-- Power of micro businesses -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-power-of-micro-businesses.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-power-of-micro-businesses.html</loc></url>
+ 
+   <!-- Reframing your money story -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-reframing-your-money-story.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-reframing-your-money-story.html</loc></url>
+ 
+   <!-- Create your perfect resume -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-create-your-perfect-resume.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-create-your-perfect-resume.html</loc></url>
+ 
+   <!-- Self-connection success -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-self-connection-success.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-self-connection-success.html</loc></url>
+ 
+   <!-- Facebook account recovery -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-facebook-account-recovery.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-facebook-account-recovery.html</loc></url>
+ 
+   <!-- Technology is failing Facebook -->
+-  <url><loc>https://wellbizsolutions.co.site/blog-technology-failing-facebook.html</loc></url>
++  <url><loc>https://www.wellbizsolutions.co.site/blog-technology-failing-facebook.html</loc></url>
+ 
+ </urlset>
+diff --git a/tools.html b/tools.html
+index ee893b0..2931824 100644
+--- a/tools.html
++++ b/tools.html
+@@ -7,6 +7,7 @@
+ <meta name="description" content="Free calculators from Wellbiz Solutions — work out your BMI or a full loan repayment schedule, right in your browser. No sign-up, no download.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/tools.html">
+ </head>
+ <body data-page="tools">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/videos.html b/videos.html
+index 5aa2b45..1fd4f58 100644
+--- a/videos.html
++++ b/videos.html
+@@ -17,6 +17,7 @@
+   .video-card p{font-size:13.5px;opacity:.72;margin:0;}
+   .empty-note{font-family:var(--mono);font-size:13px;opacity:.55;padding:20px 0;}
+ </style>
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/videos.html">
+ </head>
+ <body data-page="videos">
+ <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/work.html b/work.html
+index 9aee116..8b4a959 100644
+--- a/work.html
++++ b/work.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="A sample of recent business planning engagements from Wellbiz Solutions across refining, tourism, agriculture, manufacturing, and IT.">
+ <link rel="icon" href="/assets/images/logo.png">
+ <link rel="stylesheet" href="/css/style.css">
+-<link rel="canonical" href="https://wellbizsolutions.co.site/work.html">
++<link rel="canonical" href="https://www.wellbizsolutions.co.site/work.html">
+ </head>
+ <body data-page="work">
+ <a class="skip-link" href="#main">Skip to content</a>
