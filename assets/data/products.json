@@ -1,5 +1,5 @@
 {
- "_note": "Edit this file to change the ads shown across the site. type=product links to a shop; type=service opens WhatsApp. lang=en shows on English pages, sw on Kiswahili pages. tags decide which articles an item appears on. Set \"active\": false to hide an item, \"sponsored\": true to label a paid ad from another business. Pages listed in noAdsOnPages get no article ads (opinion pieces). homepageRotation lists the items shown one at a time on the home page; each stays for rotationHours, changing at midnight Dar es Salaam time.",
+ "_note": "Edit this file to change the ads shown across the site. type=product links to a shop; type=service opens WhatsApp. lang=en shows on English pages, sw on Kiswahili pages. tags decide which articles an item appears on. Set \"active\": false to hide an item, \"sponsored\": true to label a paid ad from another business. Pages listed in noAdsOnPages get no article ads (opinion pieces). homepageRotation lists the items shown one at a time on the home page; each stays for rotationHours, changing at 11:00 AM Dar es Salaam time.",
  "whatsappDefault": "255655281131",
  "rotationHours": 48,
  "homepageRotation": [

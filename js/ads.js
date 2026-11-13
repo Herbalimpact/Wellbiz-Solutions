@@ -165,7 +165,7 @@
   }
 
   // Home page: one featured item at a time, changing every rotationHours
-  // (default 48). The switch happens at midnight Dar es Salaam time (UTC+3),
+  // (default 48). The switch happens at 11:00 AM Dar es Salaam time (UTC+3),
   // and every visitor sees the same item during the same period.
   function addFeatured(data, number) {
     var host = document.getElementById('wb-featured');
@@ -176,7 +176,7 @@
       .filter(function (it) { return it && it.active !== false; });
     if (!list.length) return;
     var hours = data.rotationHours || 48;
-    var start = Date.UTC(2026, 10, 12, 21, 0, 0);          // 13 Nov 2026 00:00 in Dar es Salaam
+    var start = Date.UTC(2026, 10, 13, 8, 0, 0);           // 13 Nov 2026 11:00 AM in Dar es Salaam
     var period = Math.floor((Date.now() - start) / (hours * 3600000));
     var item = list[((period % list.length) + list.length) % list.length];
 
