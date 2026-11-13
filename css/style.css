@@ -355,3 +355,23 @@ main a[href^="mailto:"]{overflow-wrap:anywhere;}
   .wb-wa-float{padding:12px;}
 }
 @media print{.wb-ad,.wb-ad-rec,.wb-wa-float{display:none !important;}}
+
+/* Home page featured ad */
+.wb-featured-section{padding:48px 0 8px;}
+.wb-featured{display:flex;gap:32px;align-items:center;background:var(--light);border:1px solid var(--line-on-paper);border-top:4px solid var(--maroon);border-radius:2px;padding:24px;}
+.wb-featured.wb-ad-svc{border-top-color:var(--blue);}
+.wb-featured-img{flex:0 0 260px;display:block;}
+.wb-featured-img img{width:260px;height:260px;object-fit:cover;display:block;border-radius:2px;}
+.wb-featured-body{flex:1;min-width:0;}
+.wb-featured .wb-featured-title{font-size:clamp(22px,2.6vw,30px);line-height:1.2;margin:4px 0 12px;}
+.wb-featured-text{font-size:16px;line-height:1.6;opacity:.85;margin:0 0 18px;max-width:60ch;}
+.wb-featured-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+.wb-featured-actions .wb-ad-price{font-family:var(--mono);font-size:18px;color:var(--maroon);}
+.wb-featured-actions .wb-ad-btn{font-size:13.5px;padding:12px 22px;}
+.wb-featured-more{font-family:var(--mono);font-size:13px;}
+@media (max-width:760px){
+  .wb-featured{flex-direction:column;align-items:stretch;gap:18px;padding:16px;}
+  .wb-featured-img{flex:none;}
+  .wb-featured-img img{width:100%;height:auto;aspect-ratio:1/1;max-height:340px;}
+}
+@media print{.wb-featured-section{display:none !important;}}

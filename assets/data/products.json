@@ -1,6 +1,32 @@
 {
- "_note": "Edit this file to change the ads shown across the site. type=product links to a shop; type=service opens WhatsApp. lang=en shows on English pages, sw on Kiswahili pages. tags decide which articles an item appears on. Set \"active\": false to hide an item, \"sponsored\": true to label a paid ad from another business. Pages listed in noAdsOnPages get no article ads (opinion pieces).",
+ "_note": "Edit this file to change the ads shown across the site. type=product links to a shop; type=service opens WhatsApp. lang=en shows on English pages, sw on Kiswahili pages. tags decide which articles an item appears on. Set \"active\": false to hide an item, \"sponsored\": true to label a paid ad from another business. Pages listed in noAdsOnPages get no article ads (opinion pieces). homepageRotation lists the items shown one at a time on the home page; each stays for rotationHours, changing at midnight Dar es Salaam time.",
  "whatsappDefault": "255655281131",
+ "rotationHours": 48,
+ "homepageRotation": [
+  "business-grows",
+  "svc-business-plan",
+  "hire-right",
+  "svc-registration",
+  "good-employees",
+  "svc-tenders",
+  "capability-kit",
+  "svc-website",
+  "business-plan",
+  "svc-training",
+  "service-keeps-customers",
+  "svc-proposals",
+  "find-your-funder",
+  "svc-cv",
+  "take-control-money",
+  "money-reset",
+  "strength-in-numbers",
+  "never-too-late",
+  "degree-not-end",
+  "couples-planner",
+  "money-smart-kids",
+  "stress-guide",
+  "travel-prospectus"
+ ],
  "noAdsOnPages": [
   "blog-are-we-lighting-the-fuse-street-vendors.html",
   "blog-je-tunachoma-utambi-wamachinga-sw.html"
@@ -23,7 +49,8 @@
     "shop",
     "profit",
     "owner"
-   ]
+   ],
+   "text": "Why most small businesses never grow, and a step-by-step way to go from one shop to many: 9 chapters, a 90-day action plan, 4 Excel calculators and 10 Word tools."
   },
   {
    "id": "biashara-inayozaa",
@@ -59,7 +86,8 @@
     "start a business",
     "fail",
     "plan"
-   ]
+   ],
+   "text": "Write a business plan that banks and investors take seriously. A step-by-step guide with 8 Word tools and an Excel financial planner."
   },
   {
    "id": "business-plan-sw",
@@ -95,7 +123,8 @@
     "hr",
     "manager",
     "workplace"
-   ]
+   ],
+   "text": "The real reasons good people leave, and 15 strategies with 13 ready-to-use tools to help you keep them."
   },
   {
    "id": "wafanyakazi-bora",
@@ -130,7 +159,8 @@
     "employee",
     "staff",
     "emotional intelligence"
-   ]
+   ],
+   "text": "Stop hiring by chance. A practical hiring kit with 130 interview questions for 8 roles, 14 ready-to-use tools and a bad-hire cost calculator."
   },
   {
    "id": "usiajiri",
@@ -164,7 +194,8 @@
     "join forces",
     "micro business",
     "together"
-   ]
+   ],
+   "text": "Grow faster by joining forces: groups, partnerships and cooperatives that share the risk. Guide plus 6 tools."
   },
   {
    "id": "nguvu-ya-wingi",
@@ -199,7 +230,8 @@
     "marketing",
     "loyal",
     "shop"
-   ]
+   ],
+   "text": "Turn first-time buyers into loyal customers who come back and bring their friends. Guide plus 6 practical tools."
   },
   {
    "id": "huduma-wateja",
@@ -233,7 +265,8 @@
     "company profile",
     "formalise",
     "limited company"
-   ]
+   ],
+   "text": "Win more tenders and contracts with a capability statement that shows buyers why you are the right choice. Guide plus 6 tools."
   },
   {
    "id": "wasifu-uwezo",
@@ -269,7 +302,8 @@
     "failure",
     "never give up",
     "late"
-   ]
+   ],
+   "text": "Start a business after 40, 50 or 60+ without risking your savings. Guide plus 10 tools."
   },
   {
    "id": "hujachelewa",
@@ -306,7 +340,8 @@
     "wealth",
     "interest",
     "welfare"
-   ]
+   ],
+   "text": "Why your salary runs out before month-end, and a 5-step plan to fix it. Guide plus 11 tools for budgeting, saving and debt."
   },
   {
    "id": "shika-hatamu",
@@ -344,7 +379,8 @@
     "proposal",
     "community organisation",
     "charity"
-   ]
+   ],
+   "text": "107 international donors that fund NGOs and community organisations, with an Excel tracker to manage your applications."
   },
   {
    "id": "pata-mfadhili",
@@ -379,7 +415,8 @@
     "anxiety",
     "self-connection",
     "burnout"
-   ]
+   ],
+   "text": "Practical ways to manage stress and build mindfulness at work and at home. Guide plus 7 tools."
   },
   {
    "id": "msongo-guide",
@@ -412,7 +449,8 @@
     "teach",
     "students",
     "school"
-   ]
+   ],
+   "text": "Teach your children about money, ages 5 to 17: 24 step-by-step lessons, 13 worksheets and a family money meeting guide."
   },
   {
    "id": "watoto-makini",
@@ -448,7 +486,8 @@
     "emergency fund",
     "salary",
     "personal finance"
-   ]
+   ],
+   "text": "Reset your finances in 30 days: an auto-calculating budget workbook, a debt payoff calculator and a 13-page printable workbook."
   },
   {
    "id": "money-reset-sw",
@@ -486,7 +525,8 @@
     "family",
     "money",
     "budget"
-   ]
+   ],
+   "text": "Plan money together without fights: a fair-split calculator, a joint budget and a printable workbook for couples."
   },
   {
    "id": "mpango-wanandoa",
@@ -541,7 +581,8 @@
     "first income",
     "self-employed",
     "cv"
-   ]
+   ],
+   "text": "A 30-day workbook for unemployed graduates: 18 ways to start earning with little or no capital, one task a day."
   },
   {
    "id": "shahada-si-mwisho",
@@ -577,7 +618,8 @@
     "travel",
     "tourism",
     "tanzania trip"
-   ]
+   ],
+   "text": "Plan your Tanzania safari with confidence: a 26-page guide, day-by-day itineraries, 2026/27 park fees and a budget calculator."
   },
   {
    "id": "svc-registration",

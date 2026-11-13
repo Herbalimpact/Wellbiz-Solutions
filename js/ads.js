@@ -11,11 +11,13 @@
     en: { product: 'Recommended guide', service: 'Our service', sponsored: 'Sponsored',
           get: 'Get it', chat: 'Chat on WhatsApp', recTitle: 'Recommended for you',
           waFloat: 'Chat with us', waHello: 'Hello Wellbiz, I am interested in: ',
-          waGeneric: 'Hello Wellbiz, I have a question about your services.', allShop: 'See all e-books', allSvc: 'See all services' },
+          waGeneric: 'Hello Wellbiz, I have a question about your services.', allShop: 'See all e-books', allSvc: 'See all services',
+          featured: 'Featured offer', featuredSvc: 'Featured service', learn: 'Get it now' },
     sw: { product: 'Mwongozo tunaopendekeza', service: 'Huduma yetu', sponsored: 'Tangazo',
           get: 'Ipate sasa', chat: 'Tuandikie WhatsApp', recTitle: 'Tunakupendekezea',
           waFloat: 'Ongea nasi', waHello: 'Habari Wellbiz, ninahitaji: ',
-          waGeneric: 'Habari Wellbiz, nina swali kuhusu huduma zenu.', allShop: 'Tazama vitabu vyote', allSvc: 'Tazama huduma zote' }
+          waGeneric: 'Habari Wellbiz, nina swali kuhusu huduma zenu.', allShop: 'Tazama vitabu vyote', allSvc: 'Tazama huduma zote',
+          featured: 'Ofa maalum', featuredSvc: 'Huduma maalum', learn: 'Ipate sasa' }
   }[lang];
 
   function el(tag, cls, html) {
@@ -162,11 +164,51 @@
     else article.appendChild(box);
   }
 
+  // Home page: one featured item at a time, changing every rotationHours
+  // (default 48). The switch happens at midnight Dar es Salaam time (UTC+3),
+  // and every visitor sees the same item during the same period.
+  function addFeatured(data, number) {
+    var host = document.getElementById('wb-featured');
+    if (!host) return;
+    var byId = {};
+    (data.items || []).forEach(function (it) { byId[it.id] = it; });
+    var list = (data.homepageRotation || []).map(function (id) { return byId[id]; })
+      .filter(function (it) { return it && it.active !== false; });
+    if (!list.length) return;
+    var hours = data.rotationHours || 48;
+    var start = Date.UTC(2026, 10, 12, 21, 0, 0);          // 13 Nov 2026 00:00 in Dar es Salaam
+    var period = Math.floor((Date.now() - start) / (hours * 3600000));
+    var item = list[((period % list.length) + list.length) % list.length];
+
+    var isSvc = item.type === 'service';
+    var href = isSvc ? waLink(item.whatsapp || number, T.waHello + item.title + ' (' + location.href + ')') : productUrl(item, 'home');
+    var rel = 'noopener' + (item.sponsored ? ' sponsored' : '');
+    host.innerHTML =
+      '<div class="wrap"><div class="wb-featured' + (isSvc ? ' wb-ad-svc' : '') + '">' +
+        '<a class="wb-featured-img" href="' + esc(href) + '" target="_blank" rel="' + rel + '"><img src="' + esc(item.image) + '" alt="' + esc(item.title) + '"></a>' +
+        '<div class="wb-featured-body">' +
+          '<span class="wb-ad-label">' + esc(item.sponsored ? T.sponsored : (isSvc ? T.featuredSvc : T.featured)) + '</span>' +
+          '<h2 class="wb-featured-title">' + esc(item.title) + '</h2>' +
+          (item.text ? '<p class="wb-featured-text">' + esc(item.text) + '</p>' : '') +
+          '<div class="wb-featured-actions">' +
+            (item.price ? '<span class="wb-ad-price">' + esc(item.price) + '</span>' : '') +
+            '<a class="wb-ad-btn" href="' + esc(href) + '" target="_blank" rel="' + rel + '">' + esc(isSvc ? T.chat : T.learn) + '</a>' +
+            '<a class="wb-featured-more" href="' + (isSvc ? '/services.html' : '/ebooks.html') + '">' + esc(isSvc ? T.allSvc : T.allShop) + ' →</a>' +
+          '</div>' +
+        '</div>' +
+      '</div></div>';
+    host.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { track('ad/home/' + item.id); });
+    });
+    host.hidden = false;
+  }
+
   fetch('/assets/data/products.json', { cache: 'no-cache' })
     .then(function (r) { return r.json(); })
     .then(function (data) {
       var number = data.whatsappDefault || '255655281131';
       addWhatsAppButton(number);
+      addFeatured(data, number);
       addArticleAds(data.items || [], number, data.noAdsOnPages);
     })
     .catch(function (e) { console.error('ads:', e); });
