@@ -1,0 +1,905 @@
+{
+ "_note": "Edit this file to change the ads shown across the site. type=product links to a shop; type=service opens WhatsApp. lang=en shows on English pages, sw on Kiswahili pages. tags decide which articles an item appears on. Set \"active\": false to hide an item, \"sponsored\": true to label a paid ad from another business. Pages listed in noAdsOnPages get no article ads (opinion pieces).",
+ "whatsappDefault": "255655281131",
+ "noAdsOnPages": [
+  "blog-are-we-lighting-the-fuse-street-vendors.html",
+  "blog-je-tunachoma-utambi-wamachinga-sw.html"
+ ],
+ "items": [
+  {
+   "id": "business-grows",
+   "type": "product",
+   "lang": "en",
+   "title": "The Business That Grows Businesses",
+   "price": "$15",
+   "url": "https://payhip.com/b/VIgv4",
+   "image": "/assets/images/ebook-business-grows-cover.jpg",
+   "tags": [
+    "grow",
+    "growth",
+    "small business",
+    "branch",
+    "scale",
+    "shop",
+    "profit",
+    "owner"
+   ]
+  },
+  {
+   "id": "biashara-inayozaa",
+   "type": "product",
+   "lang": "sw",
+   "title": "Biashara Inayozaa Biashara",
+   "price": "$15",
+   "url": "https://payhip.com/b/RAZJ2",
+   "image": "/assets/images/ebook-biashara-inayozaa-cover.jpg",
+   "tags": [
+    "biashara",
+    "kukua",
+    "haikui",
+    "tawi",
+    "duka",
+    "faida",
+    "mfanyabiashara"
+   ]
+  },
+  {
+   "id": "business-plan",
+   "type": "product",
+   "lang": "en",
+   "title": "Write a Business Plan That Banks and Investors Take Seriously (Guide + 9 Tools)",
+   "price": "$15",
+   "url": "https://payhip.com/b/ed3NI",
+   "image": "/assets/images/ebook-business-plan-cover-600.jpg",
+   "tags": [
+    "business plan",
+    "loan",
+    "bank",
+    "investor",
+    "start a business",
+    "fail",
+    "plan"
+   ]
+  },
+  {
+   "id": "business-plan-sw",
+   "type": "product",
+   "lang": "sw",
+   "title": "Andika Business Plan Inayoaminika na Benki na Wawekezaji (Mwongozo + Zana 9)",
+   "price": "$15",
+   "url": "https://payhip.com/b/ub1YR",
+   "image": "/assets/images/ebook-business-plan-sw-cover-600.jpg",
+   "tags": [
+    "business plan",
+    "mkopo",
+    "benki",
+    "wawekezaji",
+    "kuanzisha biashara",
+    "hufa",
+    "mpango"
+   ]
+  },
+  {
+   "id": "good-employees",
+   "type": "product",
+   "lang": "en",
+   "title": "Good Employees Don't Leave for Nothing: 15 Strategies and 13 Tools",
+   "price": "$12",
+   "url": "https://payhip.com/b/TXqP6",
+   "image": "/assets/images/ebook-good-employees-cover.jpg",
+   "tags": [
+    "employee",
+    "staff",
+    "retention",
+    "team",
+    "hr",
+    "manager",
+    "workplace"
+   ]
+  },
+  {
+   "id": "wafanyakazi-bora",
+   "type": "product",
+   "lang": "sw",
+   "title": "Wafanyakazi Bora Hawaondoki Bure: Mbinu 15 na Zana 13",
+   "price": "$12",
+   "url": "https://payhip.com/b/nGxgl",
+   "image": "/assets/images/ebook-wafanyakazi-bora-cover.jpg",
+   "tags": [
+    "wafanyakazi",
+    "mfanyakazi",
+    "timu",
+    "ajira",
+    "meneja",
+    "kazini"
+   ]
+  },
+  {
+   "id": "hire-right",
+   "type": "product",
+   "lang": "en",
+   "title": "Hire Right the First Time: A Practical Hiring Kit with 14 Tools",
+   "price": "$15",
+   "url": "https://payhip.com/b/fjw2d",
+   "image": "/assets/images/ebook-hire-right-cover.jpg",
+   "tags": [
+    "hire",
+    "hiring",
+    "recruit",
+    "interview",
+    "employee",
+    "staff",
+    "emotional intelligence"
+   ]
+  },
+  {
+   "id": "usiajiri",
+   "type": "product",
+   "lang": "sw",
+   "title": "Usiajiri kwa Kubahatisha: Maswali na Zana za Kumtambua Mfanyakazi Sahihi",
+   "price": "$15",
+   "url": "https://payhip.com/b/JQrqR",
+   "image": "/assets/images/ebook-usiajiri-cover.jpg",
+   "tags": [
+    "kuajiri",
+    "mfanyakazi",
+    "wafanyakazi",
+    "usaili",
+    "akili hisia"
+   ]
+  },
+  {
+   "id": "strength-in-numbers",
+   "type": "product",
+   "lang": "en",
+   "title": "Strength in Numbers: Grow Faster by Joining Forces (Guide + 6 Tools)",
+   "price": "$12",
+   "url": "https://wellbiz8.gumroad.com/l/strength-in-numbers",
+   "image": "/assets/images/ebook-strength-in-numbers-cover-600.jpg",
+   "tags": [
+    "group",
+    "partnership",
+    "network",
+    "cooperative",
+    "join forces",
+    "micro business",
+    "together"
+   ]
+  },
+  {
+   "id": "nguvu-ya-wingi",
+   "type": "product",
+   "lang": "sw",
+   "title": "Nguvu ya Wingi: Kua Haraka kwa Kuunganisha Nguvu (Mwongozo + Zana 6)",
+   "price": "$12",
+   "url": "https://wellbiz8.gumroad.com/l/nguvu-ya-wingi",
+   "image": "/assets/images/ebook-nguvu-ya-wingi-cover-600.jpg",
+   "tags": [
+    "kikundi",
+    "vikundi",
+    "ubia",
+    "mtandao",
+    "ushirika",
+    "pamoja",
+    "nguvu ya wingi"
+   ]
+  },
+  {
+   "id": "service-keeps-customers",
+   "type": "product",
+   "lang": "en",
+   "title": "Service That Keeps Customers (Guide + 6 Tools)",
+   "price": "$15",
+   "url": "https://wellbiz8.gumroad.com/l/service-that-keeps-customers",
+   "image": "/assets/images/ebook-service-that-keeps-customers-cover-600.jpg",
+   "tags": [
+    "customer",
+    "service",
+    "sales",
+    "marketing",
+    "loyal",
+    "shop"
+   ]
+  },
+  {
+   "id": "huduma-wateja",
+   "type": "product",
+   "lang": "sw",
+   "title": "Huduma Inayobakiza Wateja (Mwongozo + Zana 6)",
+   "price": "$15",
+   "url": "https://wellbiz8.gumroad.com/l/huduma-inayobakiza-wateja",
+   "image": "/assets/images/ebook-huduma-inayobakiza-wateja-cover-600.jpg",
+   "tags": [
+    "wateja",
+    "huduma",
+    "mauzo",
+    "masoko",
+    "duka"
+   ]
+  },
+  {
+   "id": "capability-kit",
+   "type": "product",
+   "lang": "en",
+   "title": "Capability Statement Kit: Win More Tenders and Contracts (Guide + 6 Tools)",
+   "price": "$15",
+   "url": "https://wellbiz8.gumroad.com/l/capability-statement-kit",
+   "image": "/assets/images/ebook-capability-statement-kit-cover-600.jpg",
+   "tags": [
+    "tender",
+    "contract",
+    "capability",
+    "procurement",
+    "company profile",
+    "formalise",
+    "limited company"
+   ]
+  },
+  {
+   "id": "wasifu-uwezo",
+   "type": "product",
+   "lang": "sw",
+   "title": "Wasifu wa Uwezo wa Biashara: Shinda Zabuni na Mikataba Zaidi (Mwongozo + Zana 6)",
+   "price": "$15",
+   "url": "https://wellbiz8.gumroad.com/l/wasifu-wa-uwezo-wa-biashara",
+   "image": "/assets/images/ebook-wasifu-wa-uwezo-cover-600.jpg",
+   "tags": [
+    "zabuni",
+    "mikataba",
+    "wasifu wa uwezo",
+    "kampuni",
+    "rasmisha",
+    "kurasmisha"
+   ]
+  },
+  {
+   "id": "never-too-late",
+   "type": "product",
+   "lang": "en",
+   "title": "Never Too Late: Start a Business After 40, 50 or 60+ (Guide + 10 Tools)",
+   "price": "$15",
+   "url": "https://payhip.com/b/eQEYx",
+   "image": "/assets/images/ebook-never-too-late-cover-600.jpg",
+   "tags": [
+    "start a business",
+    "retire",
+    "retirement",
+    "savings",
+    "success",
+    "failure",
+    "never give up",
+    "late"
+   ]
+  },
+  {
+   "id": "hujachelewa",
+   "type": "product",
+   "lang": "sw",
+   "title": "Hujachelewa: Anzisha Biashara Baada ya Miaka 40, 50 au 60+ (Mwongozo + Zana 10)",
+   "price": "$15",
+   "url": "https://payhip.com/b/0xvoO",
+   "image": "/assets/images/ebook-hujachelewa-cover-600.jpg",
+   "tags": [
+    "kuanzisha biashara",
+    "kustaafu",
+    "akiba",
+    "mafanikio",
+    "kushindwa",
+    "hujachelewa"
+   ]
+  },
+  {
+   "id": "take-control-money",
+   "type": "product",
+   "lang": "en",
+   "title": "Take Control of Your Money: Personal Finance Guide (Guide + 11 Tools)",
+   "price": "$15",
+   "url": "https://payhip.com/b/Peasp",
+   "image": "/assets/images/ebook-take-control-of-your-money-cover-600.jpg",
+   "tags": [
+    "money",
+    "salary",
+    "budget",
+    "savings",
+    "personal finance",
+    "debt",
+    "wealth",
+    "interest",
+    "welfare"
+   ]
+  },
+  {
+   "id": "shika-hatamu",
+   "type": "product",
+   "lang": "sw",
+   "title": "Shika Hatamu ya Pesa Zako: Mwongozo wa Fedha Binafsi (Mwongozo + Zana 11)",
+   "price": "$15",
+   "url": "https://payhip.com/b/QYsG3",
+   "image": "/assets/images/ebook-shika-hatamu-ya-pesa-zako-cover-600.jpg",
+   "tags": [
+    "pesa",
+    "fedha",
+    "mshahara",
+    "bajeti",
+    "akiba",
+    "deni",
+    "utajiri",
+    "riba",
+    "serikali"
+   ]
+  },
+  {
+   "id": "find-your-funder",
+   "type": "product",
+   "lang": "en",
+   "title": "Find Your Funder 2026: 107 International Donors for NGOs",
+   "price": "$12",
+   "url": "https://payhip.com/b/RM7qW",
+   "image": "/assets/images/ebook-find-your-funder-cover-600.jpg",
+   "tags": [
+    "ngo",
+    "donor",
+    "funding",
+    "grant",
+    "proposal",
+    "community organisation",
+    "charity"
+   ]
+  },
+  {
+   "id": "pata-mfadhili",
+   "type": "product",
+   "lang": "sw",
+   "title": "Pata Mfadhili Wako 2026: Wafadhili 107 wa Kimataifa",
+   "price": "$12",
+   "url": "https://payhip.com/b/ytxU9",
+   "image": "/assets/images/ebook-pata-mfadhili-wako-cover-600.jpg",
+   "tags": [
+    "ngo",
+    "wafadhili",
+    "mfadhili",
+    "ruzuku",
+    "andiko",
+    "proposal",
+    "vikundi vya kijamii"
+   ]
+  },
+  {
+   "id": "stress-guide",
+   "type": "product",
+   "lang": "en",
+   "title": "The Bolts and Nuts of Stress Management and Mindfulness (Guide + 7 Tools)",
+   "price": "$12",
+   "url": "https://payhip.com/b/eYhJn",
+   "image": "/assets/images/ebook-stress-cover-600.png",
+   "tags": [
+    "stress",
+    "mindfulness",
+    "wellbeing",
+    "anxiety",
+    "self-connection",
+    "burnout"
+   ]
+  },
+  {
+   "id": "msongo-guide",
+   "type": "product",
+   "lang": "sw",
+   "title": "Misingi na Mbinu za Kudhibiti Msongo wa Mawazo (Mwongozo + Zana 7)",
+   "price": "$12",
+   "url": "https://payhip.com/b/PhDkr",
+   "image": "/assets/images/ebook-stress-sw-cover-600.png",
+   "tags": [
+    "msongo",
+    "mawazo",
+    "afya ya akili",
+    "utulivu"
+   ]
+  },
+  {
+   "id": "money-smart-kids",
+   "type": "product",
+   "lang": "en",
+   "title": "Money Smart Kids",
+   "price": "$19",
+   "url": "https://payhip.com/b/AUg6P",
+   "image": "/assets/images/money-smart-kids-cover.png",
+   "tags": [
+    "kids",
+    "children",
+    "child",
+    "parent",
+    "teach",
+    "students",
+    "school"
+   ]
+  },
+  {
+   "id": "watoto-makini",
+   "type": "product",
+   "lang": "sw",
+   "title": "Watoto Makini na Fedha",
+   "price": "$9",
+   "url": "https://payhip.com/b/HnlER",
+   "image": "/assets/images/watoto-makini-na-fedha-cover.png",
+   "tags": [
+    "watoto",
+    "mtoto",
+    "mzazi",
+    "wazazi",
+    "kufundisha",
+    "wanafunzi",
+    "shule"
+   ]
+  },
+  {
+   "id": "money-reset",
+   "type": "product",
+   "lang": "en",
+   "title": "The 30-Day Money Reset: Budget Spreadsheet, Debt Payoff Calculator & Printable Workbook",
+   "price": "$27",
+   "url": "https://payhip.com/b/XYUwt",
+   "image": "https://payhip.com/cdn-cgi/image/format=auto,width=750/https://pe56d.s3.amazonaws.com/o_1k4bgjtba17et1i7r1mhqt1u1ocm1a.png",
+   "tags": [
+    "money",
+    "budget",
+    "debt",
+    "savings",
+    "emergency fund",
+    "salary",
+    "personal finance"
+   ]
+  },
+  {
+   "id": "money-reset-sw",
+   "type": "product",
+   "lang": "sw",
+   "title": "Siku 30 za Kurekebisha Fedha Zako: Jedwali la Bajeti, Kikokotoo cha Madeni na Kitabu cha Mazoezi",
+   "price": "$9",
+   "url": "https://payhip.com/b/ASJtF",
+   "image": "/assets/images/blog-30-day-money-reset.jpg",
+   "tags": [
+    "pesa",
+    "fedha",
+    "bajeti",
+    "madeni",
+    "akiba",
+    "mshahara",
+    "dharura"
+   ]
+  },
+  {
+   "id": "couples-planner",
+   "type": "product",
+   "lang": "en",
+   "title": "The Couples' Money Planner (Excel & Google Sheets + Printable Workbook)",
+   "price": "$19",
+   "url": "https://wellbiz8.gumroad.com/l/couples-money-planner",
+   "image": "/assets/images/blog-couples-money-planner.jpg",
+   "tags": [
+    "couple",
+    "couples",
+    "marriage",
+    "married",
+    "spouse",
+    "partner",
+    "family",
+    "money",
+    "budget"
+   ]
+  },
+  {
+   "id": "mpango-wanandoa",
+   "type": "product",
+   "lang": "sw",
+   "title": "Mpango wa Fedha kwa Wanandoa (Excel na Google Sheets + Kitabu cha Mazoezi)",
+   "price": "$9",
+   "url": "https://wellbiz8.gumroad.com/l/mpango-wa-fedha-wanandoa",
+   "image": "/assets/images/blog-couples-money-planner-3.jpg",
+   "tags": [
+    "wanandoa",
+    "ndoa",
+    "mume",
+    "mke",
+    "familia",
+    "pesa",
+    "bajeti"
+   ]
+  },
+  {
+   "id": "kutoka-kusuasua",
+   "type": "product",
+   "lang": "sw",
+   "title": "Kutoka Kusuasua Hadi Kupaa: Mwongozo kwa Walimu, Wazazi na Wakufunzi (Mbinu 6 + Fomu 10)",
+   "price": "$5",
+   "url": "https://payhip.com/b/5d4ZM",
+   "image": "/assets/images/blog-kumsaidia-mwanafunzi-anayesuasua-sw.jpg",
+   "tags": [
+    "mwanafunzi",
+    "wanafunzi",
+    "mwalimu",
+    "walimu",
+    "darasa",
+    "shule",
+    "kusuasua",
+    "wazazi"
+   ]
+  },
+  {
+   "id": "degree-not-end",
+   "type": "product",
+   "lang": "en",
+   "title": "Your Degree Is Not the End: 30 Days to Your First Income (Workbook for Unemployed Graduates)",
+   "price": "$3",
+   "url": "https://payhip.com/b/9MsLi",
+   "image": "https://payhip.com/cdn-cgi/image/format=auto,width=750/https://pe56d.s3.amazonaws.com/o_1k4nk7uc411541t3m1rt5rs613lf1a.png",
+   "tags": [
+    "graduate",
+    "graduates",
+    "unemployed",
+    "job",
+    "first income",
+    "self-employed",
+    "cv"
+   ]
+  },
+  {
+   "id": "shahada-si-mwisho",
+   "type": "product",
+   "lang": "sw",
+   "title": "Shahada Yako Si Mwisho: Siku 30 za Kupata Kipato Chako cha Kwanza",
+   "price": "$3",
+   "url": "https://payhip.com/b/5tCzU",
+   "image": "/assets/images/blog-shahada-yako-si-mwisho.png",
+   "tags": [
+    "mhitimu",
+    "wahitimu",
+    "ajira",
+    "kipato",
+    "kujiajiri",
+    "shahada",
+    "cv"
+   ]
+  },
+  {
+   "id": "travel-prospectus",
+   "type": "product",
+   "lang": "en",
+   "title": "Tanzania Travel Prospectus 2026/27: Safari Planning Guide, Itineraries & Budget Calculator",
+   "price": "$29",
+   "url": "https://payhip.com/b/mvwza",
+   "image": "/assets/images/blog-best-time-great-migration.jpg",
+   "tags": [
+    "safari",
+    "serengeti",
+    "migration",
+    "park fees",
+    "travel",
+    "tourism",
+    "tanzania trip"
+   ]
+  },
+  {
+   "id": "svc-registration",
+   "type": "service",
+   "lang": "en",
+   "title": "We register your business for you",
+   "text": "BRELA, TIC, ERB and RITA registration, done right the first time, plus the compliance steps after the certificate.",
+   "image": "/service-business-support.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "register",
+    "registration",
+    "brela",
+    "tic",
+    "erb",
+    "rita",
+    "formalise",
+    "limited company",
+    "business name",
+    "usajili",
+    "kusajili",
+    "kurasmisha",
+    "rasmisha",
+    "kampuni",
+    "investment"
+   ]
+  },
+  {
+   "id": "svc-registration-sw",
+   "type": "service",
+   "lang": "sw",
+   "title": "Tunakusajilia biashara yako",
+   "text": "Usajili wa BRELA, TIC, ERB na RITA ukifanyika kwa usahihi tangu mwanzo, pamoja na hatua za baada ya cheti.",
+   "image": "/service-business-support.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "register",
+    "registration",
+    "brela",
+    "tic",
+    "erb",
+    "rita",
+    "formalise",
+    "limited company",
+    "business name",
+    "usajili",
+    "kusajili",
+    "kurasmisha",
+    "rasmisha",
+    "kampuni",
+    "investment"
+   ]
+  },
+  {
+   "id": "svc-business-plan",
+   "type": "service",
+   "lang": "en",
+   "title": "Let us write your business plan",
+   "text": "A bank-ready business plan with financial projections, prepared with you, for loans, investors or your own growth.",
+   "image": "/service-business-support.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "business plan",
+    "loan",
+    "bank",
+    "investor",
+    "grow",
+    "growth",
+    "fail",
+    "mkopo",
+    "benki",
+    "kukua",
+    "hufa",
+    "mpango"
+   ]
+  },
+  {
+   "id": "svc-business-plan-sw",
+   "type": "service",
+   "lang": "sw",
+   "title": "Tukuandikie business plan yako",
+   "text": "Business plan inayokubalika benki, yenye makadirio ya kifedha, kwa ajili ya mkopo, wawekezaji au kukuza biashara.",
+   "image": "/service-business-support.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "business plan",
+    "loan",
+    "bank",
+    "investor",
+    "grow",
+    "growth",
+    "fail",
+    "mkopo",
+    "benki",
+    "kukua",
+    "hufa",
+    "mpango"
+   ]
+  },
+  {
+   "id": "svc-tenders",
+   "type": "service",
+   "lang": "en",
+   "title": "Tender documents and capability statements",
+   "text": "We prepare company profiles, capability statements and complete tender submissions, including on NeST.",
+   "image": "/service-business-support.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "tender",
+    "contract",
+    "capability",
+    "procurement",
+    "nest",
+    "zabuni",
+    "mikataba",
+    "wasifu wa uwezo"
+   ]
+  },
+  {
+   "id": "svc-tenders-sw",
+   "type": "service",
+   "lang": "sw",
+   "title": "Nyaraka za zabuni na wasifu wa uwezo",
+   "text": "Tunaandaa wasifu wa kampuni, wasifu wa uwezo na nyaraka kamili za zabuni, ikiwemo kupitia NeST.",
+   "image": "/service-business-support.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "tender",
+    "contract",
+    "capability",
+    "procurement",
+    "nest",
+    "zabuni",
+    "mikataba",
+    "wasifu wa uwezo"
+   ]
+  },
+  {
+   "id": "svc-proposals",
+   "type": "service",
+   "lang": "en",
+   "title": "Proposal and grant writing",
+   "text": "Winning proposals for donors, partners and clients: concept notes, full proposals and budgets.",
+   "image": "/service-content-creation.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "proposal",
+    "grant",
+    "donor",
+    "funding",
+    "ngo",
+    "partnership",
+    "collaboration",
+    "andiko",
+    "ruzuku",
+    "mfadhili",
+    "wafadhili",
+    "ushirikiano"
+   ]
+  },
+  {
+   "id": "svc-proposals-sw",
+   "type": "service",
+   "lang": "sw",
+   "title": "Uandishi wa maandiko ya miradi na ruzuku",
+   "text": "Maandiko ya miradi yanayoshinda kwa wafadhili, wabia na wateja: concept notes, maandiko kamili na bajeti.",
+   "image": "/service-content-creation.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "proposal",
+    "grant",
+    "donor",
+    "funding",
+    "ngo",
+    "partnership",
+    "collaboration",
+    "andiko",
+    "ruzuku",
+    "mfadhili",
+    "wafadhili",
+    "ushirikiano"
+   ]
+  },
+  {
+   "id": "svc-website",
+   "type": "service",
+   "lang": "en",
+   "title": "A website that works for your business",
+   "text": "Professional bilingual websites with WhatsApp ordering, built and hosted at low running cost.",
+   "image": "/service-growth-digital.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "website",
+    "online",
+    "digital",
+    "marketing",
+    "facebook",
+    "social media",
+    "tovuti",
+    "mtandaoni",
+    "masoko"
+   ]
+  },
+  {
+   "id": "svc-website-sw",
+   "type": "service",
+   "lang": "sw",
+   "title": "Tovuti inayofanya kazi kwa biashara yako",
+   "text": "Tovuti za kitaalamu za lugha mbili zenye kuagiza kwa WhatsApp, kwa gharama nafuu za uendeshaji.",
+   "image": "/service-growth-digital.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "website",
+    "online",
+    "digital",
+    "marketing",
+    "facebook",
+    "social media",
+    "tovuti",
+    "mtandaoni",
+    "masoko"
+   ]
+  },
+  {
+   "id": "svc-training",
+   "type": "service",
+   "lang": "en",
+   "title": "In-house training for your team",
+   "text": "Practical workshops on customer service, sales, hiring and keeping good staff, delivered at your workplace.",
+   "image": "/service-growth-digital.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "training",
+    "employee",
+    "staff",
+    "team",
+    "customer",
+    "service",
+    "sales",
+    "hire",
+    "hiring",
+    "retention",
+    "wafanyakazi",
+    "wateja",
+    "huduma",
+    "mauzo",
+    "kuajiri",
+    "mafunzo"
+   ]
+  },
+  {
+   "id": "svc-training-sw",
+   "type": "service",
+   "lang": "sw",
+   "title": "Mafunzo kwa wafanyakazi wako",
+   "text": "Warsha za vitendo kuhusu huduma kwa wateja, mauzo, kuajiri na kudumu na wafanyakazi bora, mahali pako pa kazi.",
+   "image": "/service-growth-digital.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "training",
+    "employee",
+    "staff",
+    "team",
+    "customer",
+    "service",
+    "sales",
+    "hire",
+    "hiring",
+    "retention",
+    "wafanyakazi",
+    "wateja",
+    "huduma",
+    "mauzo",
+    "kuajiri",
+    "mafunzo"
+   ]
+  },
+  {
+   "id": "svc-cv",
+   "type": "service",
+   "lang": "en",
+   "title": "CV and cover letter writing",
+   "text": "A professional CV and cover letter tailored to the job, plus interview coaching.",
+   "image": "/service-content-creation.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "cv",
+    "resume",
+    "cover letter",
+    "job",
+    "interview",
+    "graduate",
+    "career",
+    "ajira",
+    "usaili",
+    "mhitimu",
+    "wahitimu",
+    "kazi"
+   ]
+  },
+  {
+   "id": "svc-cv-sw",
+   "type": "service",
+   "lang": "sw",
+   "title": "Uandishi wa CV na barua ya maombi",
+   "text": "CV na barua ya maombi ya kitaalamu kulingana na kazi unayoomba, pamoja na maandalizi ya usaili.",
+   "image": "/service-content-creation.jpg",
+   "whatsapp": "255655281131",
+   "tags": [
+    "cv",
+    "resume",
+    "cover letter",
+    "job",
+    "interview",
+    "graduate",
+    "career",
+    "ajira",
+    "usaili",
+    "mhitimu",
+    "wahitimu",
+    "kazi"
+   ]
+  }
+ ]
+}

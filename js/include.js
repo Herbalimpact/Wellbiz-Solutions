@@ -52,8 +52,17 @@
     document.body.appendChild(s);
   }
 
+  // Our own ads (products & services) from /assets/data/products.json.
+  function loadAds() {
+    const s = document.createElement('script');
+    s.src = '/js/ads.js';
+    s.defer = true;
+    document.body.appendChild(s);
+  }
+
   document.addEventListener('DOMContentLoaded', async () => {
     loadAnalytics();
+    loadAds();
     await loadPartial('#header-root', '/partials/header.html');
     initHeader();
     await loadPartial('#footer-root', '/partials/footer.html');

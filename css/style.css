@@ -312,3 +312,46 @@ main a[href^="mailto:"]{overflow-wrap:anywhere;}
    black wordmark, brushed-silver plate.
    ========================================================================== */
 
+
+/* ---- Wellbiz ads (js/ads.js) ---- */
+.wb-ad{display:flex;gap:18px;align-items:center;background:var(--light);border:1px solid var(--line-on-paper);border-left:4px solid var(--maroon);border-radius:2px;padding:16px;margin:32px 0;}
+.wb-ad-svc{border-left-color:var(--blue);}
+.wb-ad-img{flex:0 0 120px;display:block;}
+.wb-ad-img img{width:120px;height:120px;object-fit:cover;display:block;border-radius:2px;max-width:100%;}
+.wb-ad-body{flex:1;min-width:0;}
+.wb-ad-label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--maroon);margin-bottom:4px;}
+.wb-ad-svc .wb-ad-label{color:var(--blue);}
+.wb-ad .wb-ad-title{font-weight:600;font-size:16.5px;line-height:1.35;margin:0 0 6px;}
+.wb-ad .wb-ad-text{font-size:14.5px;opacity:.8;margin:0 0 8px;line-height:1.5;}
+.wb-ad .wb-ad-price{font-family:var(--mono);font-size:14px;color:var(--maroon);margin:0 0 10px;}
+.wb-ad-btn{display:inline-block;background:var(--maroon);color:var(--light) !important;font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;padding:10px 16px;border-radius:2px;text-decoration:none !important;}
+.wb-ad-svc .wb-ad-btn{background:#1f8f4e;}
+.wb-ad-btn:hover{filter:brightness(1.12);}
+.wb-ad-rec{margin:48px 0 32px;padding-top:24px;border-top:1px solid var(--line-on-paper);}
+.wb-ad-rec .wb-ad-rec-title{font-size:22px;margin:0 0 16px;}
+.wb-ad-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+.wb-ad-grid .wb-ad{flex-direction:column;align-items:stretch;margin:0;border-left-width:1px;border-top:4px solid var(--maroon);}
+.wb-ad-grid .wb-ad-svc{border-top-color:var(--blue);}
+.wb-ad-grid .wb-ad-img{flex:none;}
+.wb-ad-grid .wb-ad-img img{width:100%;height:auto;aspect-ratio:1/1;}
+.wb-ad-grid .wb-ad-body{display:flex;flex-direction:column;}
+.wb-ad-grid .wb-ad-btn{margin-top:auto;text-align:center;}
+.wb-ad-more{font-family:var(--mono);font-size:13px;margin:16px 0 0;}
+.wb-wa-float{position:fixed;right:18px;bottom:18px;z-index:900;display:flex;align-items:center;gap:8px;background:#25D366;color:#fff !important;text-decoration:none !important;font-family:var(--body);font-weight:600;font-size:14.5px;padding:11px 16px 11px 13px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.22);}
+.wb-wa-float:hover{background:#1ebe5b;}
+@media (max-width:760px){
+  .wb-ad-grid{grid-template-columns:1fr;}
+  .wb-ad-grid .wb-ad{flex-direction:row;align-items:center;}
+  .wb-ad-grid .wb-ad-img{flex:0 0 96px;}
+  .wb-ad-grid .wb-ad-img img{width:96px;height:96px;}
+}
+@media (max-width:480px){
+  .wb-ad{gap:12px;padding:12px;}
+  .wb-ad-img{flex:0 0 84px;}
+  .wb-ad-img img{width:84px;height:84px;}
+  .wb-ad-grid .wb-ad-img{flex:0 0 84px;}
+  .wb-ad-grid .wb-ad-img img{width:84px;height:84px;}
+  .wb-wa-float span{display:none;}
+  .wb-wa-float{padding:12px;}
+}
+@media print{.wb-ad,.wb-ad-rec,.wb-wa-float{display:none !important;}}
