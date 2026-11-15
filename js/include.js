@@ -68,4 +68,38 @@
     await loadPartial('#footer-root', '/partials/footer.html');
     initFooter();
   });
+
+  // Newsletter sign-up (Brevo). Delegated so it works on the footer that is
+  // injected via innerHTML. Posts to Brevo's form endpoint and shows the
+  // result inline, without leaving the page.
+  document.addEventListener('submit', async function (e) {
+    const form = e.target.closest && e.target.closest('.wb-nl-form');
+    if (!form) return;
+    e.preventDefault();
+    const msg = form.querySelector('.wb-nl-msg');
+    const email = form.querySelector('input[name="EMAIL"]');
+    const btn = form.querySelector('button[type="submit"]');
+    msg.className = 'wb-nl-msg';
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim())) {
+      msg.textContent = 'Please enter a valid email address. / Tafadhali andika barua pepe sahihi.';
+      msg.classList.add('err');
+      email.focus();
+      return;
+    }
+    btn.disabled = true;
+    try {
+      await fetch(form.action, { method: 'POST', mode: 'no-cors', body: new FormData(form) });
+      msg.textContent = "Thank you! You're subscribed. / Asante! Umejiunga.";
+      msg.classList.add('ok');
+      form.reset();
+      if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({ path: 'newsletter-signup', title: 'Newsletter sign-up', event: true });
+      }
+    } catch (err) {
+      msg.textContent = 'Something went wrong. Please try again. / Jaribu tena.';
+      msg.classList.add('err');
+    } finally {
+      btn.disabled = false;
+    }
+  });
 })();
