@@ -395,3 +395,12 @@ main a[href^="mailto:"]{overflow-wrap:anywhere;}
 .wb-nl-msg.ok{color:#9be3b0;}
 .wb-nl-msg.err{color:#ffb3b3;}
 @media (max-width:760px){.wb-nl{grid-template-columns:1fr;gap:18px;}.wb-nl-page{padding:26px 20px;}}
+
+/* ===== Author box on articles ===== */
+.author-box{display:flex;gap:16px;align-items:center;margin:36px 0 28px;padding:18px 20px;border:1px solid var(--line-on-paper);border-radius:12px;background:#fff;}
+.author-box img{width:72px;height:72px;border-radius:50%;object-fit:cover;flex-shrink:0;}
+.author-box p{margin:0;}
+.author-box .author-name{font-weight:600;color:var(--ink);margin-bottom:4px;}
+.author-box .author-name a{color:var(--maroon);}
+.author-box .author-bio{font-size:15px;line-height:1.55;opacity:.85;}
+@media (max-width:520px){.author-box{align-items:flex-start;}}
