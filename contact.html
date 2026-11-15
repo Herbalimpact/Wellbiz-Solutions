@@ -8,6 +8,16 @@
 <link rel="icon" href="/assets/images/logo.png">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="canonical" href="https://www.wellbizsolutions.co.site/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wellbiz Solutions">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Contact — Wellbiz Solutions">
+<meta property="og:description" content="Get in touch with Wellbiz Solutions in Dar es Salaam — business registration, planning, and content services.">
+<meta property="og:url" content="https://www.wellbizsolutions.co.site/contact.html">
+<meta property="og:image" content="https://www.wellbizsolutions.co.site/CONTACT-PHOTO.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.wellbizsolutions.co.site/CONTACT-PHOTO.jpg">
+
 <style>
   .field{margin-bottom:20px;}
   .field label{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px;color:var(--blue-bright);}
@@ -39,35 +49,14 @@
 
   <section class="section-pad on-ink" style="padding-top:56px;">
     <div class="wrap grid-2">
-      <!--
-        HOW THIS FORM WORKS (read me):
-        This form sends to a free service called Formspree, which forwards
-        it straight to your email inbox — no server needed on your end.
-
-        TO ACTIVATE IT (one-time, ~2 minutes):
-        1. Go to https://formspree.io and sign up free with your email.
-        2. Click "New Form", name it "Wellbiz Contact", and it will give you
-           a web address that looks like: https://formspree.io/f/abcd1234
-        3. Copy that address and paste it into the "action" attribute just
-           below, replacing YOUR_FORM_ID_HERE with your real ID (just the
-           "abcd1234" part, or the whole address — both work).
-        4. Save this file. That's it — the form now really sends email.
-
-        Until you do this, the form will show Formspree's own "not
-        configured" message instead of sending anywhere.
-      -->
-      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
-        <div class="field hp">
-          <label for="company">Company</label>
-          <input type="text" id="company" name="_gotcha" tabindex="-1" autocomplete="off">
-        </div>
+      <form id="contactForm" novalidate>
         <div class="field">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required maxlength="100">
         </div>
         <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="_replyto" required maxlength="150">
+          <label for="email">Email (optional)</label>
+          <input type="email" id="email" name="email" maxlength="150">
         </div>
         <div class="field">
           <label for="phone">Phone (optional)</label>
@@ -79,6 +68,8 @@
             <option>Business Registration</option>
             <option>Business or Strategic Planning</option>
             <option>Content Creation</option>
+            <option>Website</option>
+            <option>E-books and Guides</option>
             <option>Something else</option>
           </select>
         </div>
@@ -86,9 +77,39 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required maxlength="2000"></textarea>
         </div>
-        <input type="hidden" name="_subject" value="New enquiry from wellbizsolutions.org">
-        <button class="btn btn-primary" type="submit">Send message</button>
+        <button class="btn btn-primary" type="submit">Send via WhatsApp</button>
+        <p style="font-size:13.5px;margin-top:12px;opacity:.85;">Your message opens in WhatsApp, ready to send to +255 655 281 131. Prefer email? <a href="#" id="sendEmail">Send it by email instead</a>.</p>
+        <div id="formStatus" role="status"></div>
       </form>
+      <script>
+        (function () {
+          var f = document.getElementById('contactForm');
+          function build() {
+            var v = function (id) { return (document.getElementById(id).value || '').trim(); };
+            var lines = ['Hello Wellbiz Solutions,', '', v('message'), '', 'Name: ' + v('name'), 'Topic: ' + v('subject')];
+            if (v('phone')) lines.push('Phone: ' + v('phone'));
+            if (v('email')) lines.push('Email: ' + v('email'));
+            lines.push('(Sent from the website contact page)');
+            return lines.join('\n');
+          }
+          function ok() {
+            var st = document.getElementById('formStatus');
+            if (!document.getElementById('name').value.trim() || !document.getElementById('message').value.trim()) {
+              st.className = 'err'; st.textContent = 'Please enter your name and a message.'; return false;
+            }
+            st.className = 'ok'; st.textContent = 'Opening… just press send.'; return true;
+          }
+          f.addEventListener('submit', function (e) {
+            e.preventDefault(); if (!ok()) return;
+            try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: 'contact/whatsapp', title: 'contact/whatsapp', event: true }); } catch (x) {}
+            window.open('https://wa.me/255655281131?text=' + encodeURIComponent(build()), '_blank');
+          });
+          document.getElementById('sendEmail').addEventListener('click', function (e) {
+            e.preventDefault(); if (!ok()) return;
+            location.href = 'mailto:info@wellbizsolutions.co.site?subject=' + encodeURIComponent('Website enquiry: ' + document.getElementById('subject').value) + '&body=' + encodeURIComponent(build());
+          });
+        })();
+      </script>
 
       <div>
         <ul style="list-style:none;margin:0;padding:0;">
@@ -107,6 +128,10 @@
           <li style="display:flex;gap:18px;font-size:15px;padding:16px 0;border-top:1px solid var(--line-on-ink);border-bottom:1px solid var(--line-on-ink);">
             <span style="font-family:var(--mono);font-size:11.5px;color:var(--blue-bright);text-transform:uppercase;letter-spacing:.08em;min-width:110px;">Phone</span>
             <span>+255 754 281 131 / +255 655 281 131</span>
+          </li>
+          <li style="display:flex;gap:18px;font-size:15px;padding:16px 0;border-bottom:1px solid var(--line-on-ink);">
+            <span style="font-family:var(--mono);font-size:11.5px;color:var(--blue-bright);text-transform:uppercase;letter-spacing:.08em;min-width:110px;">WhatsApp</span>
+            <a href="https://wa.me/255655281131" target="_blank" rel="noopener">+255 655 281 131 — chat now</a>
           </li>
         </ul>
         <div style="display:flex;gap:14px;margin-top:30px;">
